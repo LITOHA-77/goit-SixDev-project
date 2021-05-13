@@ -50,6 +50,26 @@ html {
     overflow: hidden;
   }
   
+  .title {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: Caveat Brush, sans-serif;
+    font-weight: $main-font-weight;
+    font-size: 24px;
+    line-height: $main-section-title-line-height;
+    text-align: center;
+    color: $main-text-color;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: $desktop-section-title-line-height;
+
+    }
+    
+  }
   
   .list {
     list-style: none;
