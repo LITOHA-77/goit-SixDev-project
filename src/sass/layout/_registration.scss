@@ -1,0 +1,192 @@
+// .registration {
+
+// }
+
+// ---------контейнер секциии регистрация------
+.regisraton_container {
+  width: 100%;
+  height: 426px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    text-align: center;
+  }
+}
+
+// ---------заголовок секции------
+
+.regisraton_tittle {
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%, 50%);
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 11px;
+  width: 106px;
+  height: 65px;
+}
+
+// ---------контейнер для контента и формы------
+
+.container_content {
+  display: inline-block;
+  height: 510px;
+  width: 290px;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+  padding-top: 91px;
+  background-color: $registration-form-background;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 260px;
+    height: 634px;
+    border-radius: 150px 150px 150px 150px;
+    transform: rotate(-90deg);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ---------ВРЕМЯ РЕГИСТРАЦИИ------
+
+.registration_time {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 114px;
+  height: 44px;
+  margin-bottom: 25px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: $desktop-main-line-height;
+  color: $main-text-color;
+  text-align: center;
+}
+
+// ---------Цена------
+
+.registration_price {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 22px;
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: $desktop-main-line-height;
+  color: $main-text-color;
+  text-align: center;
+}
+
+// ---------ЛИНИЯ 1Px-- --------
+.registration_line {
+  display: block;
+  width: 265px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid $input-text-color;
+  margin-bottom: 11px;
+}
+
+// ---------ФОРМА РЕГИСТРАЦИИ-- --------
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // width: 100%;
+  // max-width: 448px;
+
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  input {
+    font-family: Montserrat;
+    color: $input-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $input-text-color;
+  }
+  input:-ms-input-placeholder {
+    color: $input-text-color;
+  }
+  input::-ms-input-placeholder {
+    color: $input-text-color;
+  }
+  input::placeholder {
+    color: $input-text-color;
+  }
+  transform: rotate(90deg);
+}
+
+// ---------ФОРМА ЗАГОЛОВОК-- --------
+
+.form-registration-title {
+  // display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 265px;
+  height: 40px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: $main-line-height;
+  color: $main-text-color;
+  text-align: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin-bottom: 17px;
+}
+
+// ---------ФОРМА input-- --------
+
+.form-registration_input1 {
+  width: 265px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid $pagination-color;
+}
+
+.form-registration_input2 {
+  width: 265px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid $pagination-color;
+}
+
+.form-registration_input3 {
+  width: 265px;
+  margin-bottom: 37px;
+  border: none;
+  border-bottom: 1px solid $pagination-color;
+}
+
+// ---------ФОРМА BUTTON-- --------
+.form-registration_button {
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $button-text-color;
+  border: none;
+  text-align: center;
+  background-color: $pagination-color;
+  border-radius: 25px;
+  width: 145px;
+  height: 40px;
+}
