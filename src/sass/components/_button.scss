@@ -1,0 +1,30 @@
+.button {
+  display: inline-flex;
+  padding: 7px 45px 8px 45px;
+  min-width: 145px;
+  color: $button-text-color;
+  background: $button-background-color;
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  border-color: $button-background-color;
+  border-radius: 25px;
+  cursor: pointer;
+  border-style: solid 1px;
+  &:hover {
+    background-color: $menu-hover-text-color;
+    border-color: $menu-hover-text-color;
+  }
+  &:focus {
+    background-color: $button-focus-background-color;
+    border-color: $button-focus-background-color;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 6px 43px 7px 43px;
+    min-width: 158px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+// кнопка пока не точная пусть будет так нужно написать ментору много не соответсвий делал на глаз
