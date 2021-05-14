@@ -1,0 +1,35 @@
+.social-list {
+  display: flex;
+  flex-direction: row;
+}
+.social-list__item + .social-list__item {
+  margin-left: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  align-items: center;
+}
+
+
+.social-list__icon {
+  fill: $main-text-color;
+  height: 15px;
+
+  .social-list__link &:hover,
+  .social-list__link &:focus {
+    fill: $menu-hover-text-color;
+  }
+}
+
+.icon-twitter {
+  width: 19px;
+}
+
+.icon-instagramm {
+  width: 15px;
+}
+
+.icon-facebook {
+  width: 8px;
+}

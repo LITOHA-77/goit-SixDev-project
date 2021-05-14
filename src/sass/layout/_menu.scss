@@ -1,0 +1,20 @@
+.mobile-menu {
+  position: absolute;
+  display: block;
+
+  @media screen and (min-width:1280px) {
+    display: none;
+  }
+
+}
+
+.button__mobile-menu-open {
+  position: absolute;
+  right: 0;
+  top: 15px;
+
+  @media screen and (min-width:780px) {
+    top: 25px;
+  }
+
+}
