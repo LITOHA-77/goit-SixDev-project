@@ -1,16 +1,13 @@
-.section-button{
-    display: inline-flex;
-
+.section-button {
+display: inline-flex;
 font-family: Caveat Brush;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 3.61;
-
 text-align: center;
-
 color: $button-background-color;
-background-color: none;
+background-color: transparent;
 border: none;
 
 }
