@@ -8,8 +8,7 @@ html {
   box-sizing: inherit;
 
   // отключить в случае необходимости
-
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 img {
@@ -37,6 +36,9 @@ body {
   font-weight: $main-font-weight;
   font-size: $main-font-size;
   line-height: $main-line-height;
+  @media screen and (min-width: 1280px) {
+    background-color: $main-background-color-desktop;
+  }
 }
 
 .visually-hidden {
@@ -58,7 +60,58 @@ body {
   margin: 0;
 }
 
+// .container {
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   @media screen and (min-width: 320px) {
+//     width: 320px;
+//   }
+
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     width: 852px;
+//   }
+// }
+
+.title {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-family: Caveat Brush, sans-serif;
+  font-weight: $main-font-weight;
+  font-size: 24px;
+  line-height: $main-section-title-line-height;
+  text-align: center;
+  color: $main-text-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: $desktop-section-title-line-height;
+  }
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -68,71 +121,15 @@ body {
     width: 320px;
   }
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 656px;
   }
-
 
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    width: 852px;
   }
 }
- 
-  .title {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-    font-family: Caveat Brush, sans-serif;
-    font-weight: $main-font-weight;
-    font-size: 24px;
-    line-height: $main-section-title-line-height;
-    text-align: center;
-    color: $main-text-color;
-
-    @media screen and (min-width: 1280px) {
-      font-size: 36px;
-      line-height: $desktop-section-title-line-height;
-
-    }
-    
-  }
-  
-  .list {
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    
-  
-    @media screen and (min-width: 320px) {
-      width: 320px;
-    }
-  
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-  
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-    }
-  }
-

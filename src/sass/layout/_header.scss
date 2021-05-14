@@ -1,9 +1,4 @@
-* {
-  outline: none;
-}
-
 .header {
-  
   padding-top: 10px;
   text-align: center;
 
@@ -44,8 +39,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-   max-width: 490px;
-   margin-bottom: 30px;
+    max-width: 490px;
+    margin-bottom: 30px;
   }
 }
 
@@ -63,7 +58,6 @@
 }
 
 .header__subtitle {
-
   font-weight: 500;
 
   @media screen and (min-width: 1280px) {
