@@ -1,11 +1,11 @@
 .background-image--up {
   height: 460.51px;
-  max-width: 320px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(/images/background/mobile/bg-mobile.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/background/mobile/bg-mobile@2x.png);
@@ -25,12 +25,12 @@
 }
 .background-image--down {
   height: 1214.6px;
-  max-width: 320px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(/images/background/mobile/bg2-mobile.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/background/mobile/bg2-mobile@2x.png);
