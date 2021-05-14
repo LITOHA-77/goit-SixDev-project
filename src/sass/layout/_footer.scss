@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 47px;
+  padding-bottom: 19px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 82px;
+  }
+}
+
+.footerbox {
+  display: block;
+}
+
+.address-block__list {
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.address-block__link {
+  display: flex;
+  align-items: center;
+  //   transition: ;
+  &:hover,
+  &:focus {
+    color: $menu-hover-text-color;
+  }
+}
+.address-block__icon {
+  display: block;
+  margin-right: 3px;
+  fill: currentColor;
+  // transition: $transition-fill;
+}

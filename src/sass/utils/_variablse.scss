@@ -1,5 +1,6 @@
-$main-background-color: #FFFFFF;
-$main-text-color: #2E2520;
+$main-background-color: #ffffff;
+$main-background-color-desktop: #fef3e4;
+$main-text-color: #2e2520;
 $secondary-text-color: #000000;
 $main-font: Montserrat, sans-serif;
 $main-font-weight: 400;
@@ -10,27 +11,20 @@ $main-section-title-line-height: 2.71;
 $desktop-main-line-height: 1.2222;
 $desktop-main-title-line-height: 1.0156;
 $desktop-section-title-line-height: 1.81;
-$button-text-color: #FFFFFF;
-$button-background-color:#AB816C;
+$button-text-color: #ffffff;
+$button-background-color: #ab816c;
 $button-hover-background-color: #876655;
-$button-focus-background-color: #674D40;
+$button-focus-background-color: #674d40;
 $button-border-radius: 25px;
-$input-text-color:  rgba(171, 129, 108, 0.5);
+$input-text-color: rgba(171, 129, 108, 0.5);
 $menu-background-color: rgba(254, 243, 228, 0.9);
 $menu-backdrop-filter: blur(4px);
 $menu-hover-text-color: #876655;
-$menu-current-text-color: #674D40;
-$pagination-color: #AB816C;
+$menu-current-text-color: #674d40;
+$pagination-color: #ab816c;
 $registration-form-main-border: 1px solid rgba(171, 129, 108, 0.5);
-$registration-form-input-border: 1px solid #AB816C;
-$registration-form-background: #FFFFF9;
-$registration-form-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+$registration-form-input-border: 1px solid #ab816c;
+$registration-form-background: #fffff9;
+$registration-form-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+  4px 4px 4px rgba(171, 129, 108, 0.15);
 $transition-background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
-
-
-
-
-
