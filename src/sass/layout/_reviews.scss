@@ -1,3 +1,6 @@
+
+
+
 .simple-rating {
     position: relative;
     display: inline-block;
@@ -7,7 +10,6 @@
         content: "★★★★★";
         display: block;
     }
-
 
 }
 
@@ -21,7 +23,6 @@
     flex-direction: row-reverse;
     overflow: hidden;
     
-
 }
 
 .simple-rating__item {
@@ -40,7 +41,6 @@
         color: #AB816C;
 
     }
-
 }
 
 .simple-rating__label {
@@ -54,7 +54,6 @@
         content: "★";
         display: block;
 
-
     }
 
     &:hover,
@@ -65,3 +64,4 @@
     }
 
 }
+
