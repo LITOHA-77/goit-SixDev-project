@@ -17,8 +17,8 @@
     border-color: $menu-hover-text-color;
   }
   &:focus {
-    background-color: $button-focus-background-color;
-    border-color: $button-focus-background-color;
+    background-color: $button-click-background-color;
+    border-color: $button-click-background-color;
   }
   @media screen and (min-width: 1200px) {
     padding: 6px 43px 7px 43px;
