@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 
   // отключить в случае необходимости
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 img {
@@ -79,7 +79,7 @@ body {
   }
 
   @media screen and (min-width: 1280px) {
-    width: 852px;
+    width: 1280px;
   }
 }
 
