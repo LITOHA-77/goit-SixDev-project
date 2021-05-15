@@ -5,12 +5,11 @@
   right: 0;
   width: 100%;
   min-width: 320px;
-  text-align: center;
-
-  opacity: 1;
+  text-align: center;  
+  overflow-y: scroll;
+  opacity: 1;  
   background-color: $menu-background-color;
   backdrop-filter: $menu-backdrop-filter;
-
   // transform: scale(1,1);
   transition: 
   // transform $transition-background-color,
@@ -66,6 +65,12 @@
   justify-content: center;
 
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .mobile-and-tablet-menu__button-icon,
+  &:focus .mobile-and-tablet-menu__button-icon {
+    fill: $menu-hover-text-color;
+  }
 
   @media screen and (min-width: 768px) {
     top: 25px;
@@ -107,9 +112,14 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2083;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: $menu-hover-text-color;
+  }
+
+  &:active {
+    color: $menu-current-text-color;
   }
 }
