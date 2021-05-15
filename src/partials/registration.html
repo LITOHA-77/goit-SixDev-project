@@ -2,33 +2,39 @@
     <div class="regisraton_container container">
         <h2 class="title regisraton_tittle">Registration</h2>
         <div class="container_content ">
-            <span class="registration_time">
-                May 23, 11:00 New York
-            </span>
-            <span class="registration_price">
-                $ 699
-            </span>
-            <div class="registration_line"></div>
+                 <div class="container_content-one">
+                    <span class="registration_time">
+                         May 23, 11:00 New York
+                    </span>
+                    <span class="registration_price">
+                     $ 699
+                    </span>
+                </div>
+            <!-- <div class="registration_line"></div> -->
+
             <form class="form-registration">
                 <p class="form-registration-title">
                     Apply your personal info for registration
                 </p>
-                <label >
+                <label class="general-label-registration form-registration_label2">
                 
-                    <input class="form-registration_input1" type="text" name="username" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" placeholder="Your name" required/>
+                    <input class="general-input-registration form-registration_input1" type="text" name="username" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" placeholder="Your name" required/>
                 </label>
-                <label >
+                <label class="general-label-registration form-registration_label2">
               
-                    <input class="form-registration_input2" type="tel" name="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="Phone number" required />
+                    <input class="general-input-registration form-registration_input2" type="tel" name="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="Phone number" required />
                 </label>
-                <label >
+                <label class="general-label-registration form-registration_label3">
                    
-                    <input class="form-registration_input3" type="email" name="email"  pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" placeholder="Email" required/>
-                </label>
-                <button class="form-registration_button">Register</button>
-
-
+                    <input class="general-input-registration form-registration_input3" type="email" name="email"  pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" placeholder="Email" required/>
+                </label >
+               
             </form>
+            <div class="container_content-button">
+                <button class="form-registration_button">Register</button>
+            </div>
+
+             
         </div>
     </div>
 </section>
