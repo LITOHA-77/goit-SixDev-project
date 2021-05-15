@@ -6,9 +6,23 @@
     line-height: $desktop-main-line-height;
   }
 }
+.about-us__description {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
 .about-us__bg {
   background-image: url(/images/about/mobile/pic-mobile.png);
   background-size: 290px cover;
   background-repeat: no-repeat;
   background-position: top 20px center;
+}
+// пример
+#more {
+  display: none;
 }
