@@ -1,107 +1,114 @@
 <section class="program">
     <div class="container">
-            <h2 class="program-title title title--left">Program</h2>
-            <div class="program-flexbox">
-            <div class="program-wrapper program--content-box">
-            <p class="program-description program-description--margin">Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!</p>
-            <ul class="program-list list">
-                <li class="program-list__item program-list__item--margin">A stand up history of donuts</li>
-                <li class="program-list__item program-list__item--margin">Make 3 donut flavors of your choice</li>
-                <li class="program-list__item program-list__item--margin">Enjoy all-you-can-eat donuts</li>
-                <li class="program-list__item program-list__item--margin">Cocktail pairings and coffee included</li>
-                <li class="program-list__item program-list__item--margin">Photoshoot by professional photographer</li>
-                <li class="program-list__item program-list__item--margin">Secret receipt of cooking from Eva</li>
-                <li class="program-list__item program-list__item--margin">All products are included in the price</li>
-            </ul>
-            <p class="program-description">Come with your dear people and friends
-                and you will spend an unforgettable time and
-                will become a real professional in donuts cooking! </p>
-
-                <button class="section-button">Less</button>
+        <h2 class="program__title title title--left">Program</h2>
+        <div class="program-flexbox">
+            <div class="program-wrapper program-content-box">
+                <p class="program__description program__description--margin">Indulge in this immersive sweet treat
+                    experience with The Chef Donut Queen in her New York donut shop!</p>
+                <ul class="program-list list">
+                    <li class="program-list__item program-list__item--margin">A stand up history of donuts</li>
+                    <li class="program-list__item program-list__item--margin">Make 3 donut flavors of your choice</li>
+                    <li class="program-list__item program-list__item--margin">Enjoy all-you-can-eat donuts</li>
+                    <li class="program-list__item program-list__item--margin">Cocktail pairings and coffee included</li>
+                    <li class="program-list__item program-list__item--margin">Photoshoot by professional photographer
+                    </li>
+                    <li class="program-list__item program-list__item--margin">Secret receipt of cooking from Eva</li>
+                    <li class="program-list__item program-list__item--margin">All products are included in the price
+                    </li>
+                </ul>
+                <p class="program__description program__description--hidden" id='text'>Come with your dear people and
+                    friends
+                    and you will spend an unforgettable time and
+                    will become a real professional in donuts cooking! </p>
+                <button class="program__section-button section-button" id='btn' onclick='toggle()'>Read more</button>
             </div>
 
-            
-            <!-- <ul class="program-picture-list list program--content-box program-flexbox"> -->
-                <ul class="program-picture-list list program--content-box program--content-box-center">
-                <!-- <li class="program-picture-list__item program-picture-list__item--margin program--content-box"> -->
-                                        <li class="program-picture-list__item program-picture-list__item--margin">
-                        
-                                                 
-                            <picture>
-                                <source srcset="/images/program/mobile/donut1-mobile.jpg 1x, /images/program/mobile/donut1-mobile@2x.jpg 2x"
-                                media="(max-width: 767px)" type="image/jpg" />
-                                <source srcset="/images/program/tablet/donut1-tablet.jpg 1x, /images/program/tablet/donut1-tablet@2x.jpg 2x"
-                                media="(min-width: 768px)" type="image/jpg" />
-                                <source srcset=" /images/program/desktop/donut1-desktop.jpg 1x, /images/program/desktop/donut1-desktop@2x.jpg 2x"
-                                media="(min-width: 1200px)" type="image/jpg" />
-                                <img class="program-picture-list__img" src="/images/program/desktop/donut1-desktop.jpg" alt="Donut" >
-                            </picture>
-                            <!-- <div class="text"> -->
-                                                    <p class="program-picture-list__title">Type of the event</p>
+            <ul class="program-picture-list list program-content-box program-content-box--center">
+                <li class="program-picture-list__item program-picture-list__item--margin">
+                    <picture>
+                        <source
+                            srcset=" /images/program/desktop/donut1-desktop.png 1x, /images/program/desktop/donut1-desktop@2x.png 2x"
+                            media="(min-width: 1280px)" type="image/png" />
+                        <source
+                            srcset="/images/program/tablet/donut1-tablet.png 1x, /images/program/tablet/donut1-tablet@2x.png 2x"
+                            media="(min-width: 768px)" type="image/png" />
+                        <source
+                            srcset="/images/program/mobile/donut1-mobile.png 1x, /images/program/mobile/donut1-mobile@2x.png 2x"
+                            media="(max-width: 767px)" type="image/png" />
+                        <img class="program-picture-list__img" src="/images/program/desktop/donut1-desktop.png"
+                            alt="Donut">
+                    </picture>
+                    <p class="program-picture-list__title">Type of the event</p>
                     <p class="program-picture-list__info">Cooking classes</p>
                     <svg class="program-picture-list__icon" width="19" height="18">
                         <use href="./images/sprite.svg#icon-chef-hat"></use>
                     </svg>
-                <!-- </div> -->
                 </li>
-                <!-- <li class="program-picture-list__item program-picture-list__item--transform program--content-box"> -->
-                    <li class="program-picture-list__item program-picture-list__item--transform">
-                        <picture>
-                            <source srcset="/images/program/mobile/donut2-mobile.jpg 1x, /images/program/mobile/donut2-mobile@2x.jpg 2x"
-                            media="(max-width: 767px)" type="image/jpg" />
-                            <source srcset="/images/program/tablet/donut2-tablet.jpg 1x, /images/program/tablet/donut2-tablet@2x.jpg 2x"
-                            media="(min-width: 768px)" type="image/jpg" />
-                            <source srcset=" /images/program/desktop/donut2-desktop.jpg 1x, /images/program/desktop/donut2-desktop@2x.jpg 2x"
-                            media="(min-width: 1200px)" type="image/jpg" />
-                            <img class="program-picture-list__img" src="/images/program/desktop/donut2-desktop.jpg" alt="Donut" >
-                        </picture>
+
+                <li class="program-picture-list__item program-picture-list__item--transform">
+                    <picture>
+                        <source
+                            srcset=" /images/program/desktop/donut2-desktop.png 1x, /images/program/desktop/donut2-desktop@2x.png 2x"
+                            media="(min-width: 1280px)" type="image/png" />
+                        <source
+                            srcset="/images/program/tablet/donut2-tablet.png 1x, /images/program/tablet/donut2-tablet@2x.png 2x"
+                            media="(min-width: 768px)" type="image/png" />
+                        <source
+                            srcset="/images/program/mobile/donut2-mobile.png 1x, /images/program/mobile/donut2-mobile@2x.png 2x"
+                            media="(max-width: 767px)" type="image/png" />
+                        <img class="program-picture-list__img" src="/images/program/desktop/donut2-desktop.png"
+                            alt="Donut">
+                    </picture>
                     <p class="program-picture-list__title">Number of guests</p>
                     <p class="program-picture-list__info">1 to 20</p>
                     <svg class="program-picture-list__icon" width="20" height="18">
                         <use href="./images/sprite.svg#icon-people"></use>
                     </svg>
                 </li>
-                <!-- <li class="program-picture-list__item program-picture-list__item--margin program--content-box"> -->
-                    <li class="program-picture-list__item program-picture-list__item--margin">
-                        <picture>
-                            <source srcset="/images/program/mobile/donut3-mobile.jpg 1x, /images/program/mobile/donut3-mobile@2x.jpg 2x"
-                            media="(max-width: 767px)" type="image/jpg" />
-                            <source srcset="/images/program/tablet/donut3-tablet.jpg 1x, /images/program/tablet/donut3-tablet@2x.jpg 2x"
-                            media="(min-width: 768px)" type="image/jpg" />
-                            <source srcset=" /images/program/desktop/donut3-desktop.jpg 1x, /images/program/desktop/donut3-desktop@2x.jpg 2x"
-                            media="(min-width: 1200px)" type="image/jpg" />
-                            <img class="program-picture-list__img" src="/images/program/desktop/donut3-desktop.jpg" alt="Donut" >
-                        </picture>
+
+                <li class="program-picture-list__item program-picture-list__item--margin">
+                    <picture>
+                        <source
+                            srcset=" /images/program/desktop/donut3-desktop.png 1x, /images/program/desktop/donut3-desktop@2x.png 2x"
+                            media="(min-width: 1280px)" type="image/png" />
+                        <source
+                            srcset="/images/program/tablet/donut3-tablet.png 1x, /images/program/tablet/donut3-tablet@2x.png 2x"
+                            media="(min-width: 768px)" type="image/png" />
+                        <source
+                            srcset="/images/program/mobile/donut3-mobile.png 1x, /images/program/mobile/donut3-mobile@2x.png 2x"
+                            media="(max-width: 767px)" type="image/png" />
+                        <img class="program-picture-list__img" src="/images/program/desktop/donut3-desktop.png"
+                            alt="Donut">
+                    </picture>
                     <p class="program-picture-list__title">Time of the event</p>
                     <p class="program-picture-list__info">18:30 (2.5 hours)</p>
                     <svg class="program-picture-list__icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-clock"></use>
                     </svg>
                 </li>
-                <!-- <li class="program-picture-list__item program-picture-list__item--transform program--content-box"> -->
-                    <li class="program-picture-list__item program-picture-list__item--transform">
-                        <picture>
-                            <source srcset="/images/program/mobile/donut4-mobile.jpg 1x, /images/program/mobile/donut4-mobile@2x.jpg 2x"
-                            media="(max-width: 767px)" type="image/jpg" />
-                            <source srcset="/images/program/tablet/donut4-tablet.jpg 1x, /images/program/tablet/donut4-tablet@2x.jpg 2x"
-                            media="(min-width: 768px)" type="image/jpg" />
-                            <source srcset=" /images/program/desktop/donut4-desktop.jpg 1x, /images/program/desktop/donut4-desktop@2x.jpg 2x"
-                            media="(min-width: 1200px)" type="image/jpg" />
-                            <img class="program-picture-list__img" src="/images/program/desktop/donut4-desktop.jpg" alt="Donut" >
-                        </picture>
+
+                <li class="program-picture-list__item program-picture-list__item--transform">
+                    <picture>
+                        <source
+                            srcset=" /images/program/desktop/donut4-desktop.png 1x, /images/program/desktop/donut4-desktop@2x.png 2x"
+                            media="(min-width: 1280px)" type="image/png" />
+                        <source
+                            srcset="/images/program/tablet/donut4-tablet.png 1x, /images/program/tablet/donut4-tablet@2x.png 2x"
+                            media="(min-width: 768px)" type="image/png" />
+                        <source
+                            srcset="/images/program/mobile/donut4-mobile.png 1x, /images/program/mobile/donut4-mobile@2x.png 2x"
+                            media="(max-width: 767px)" type="image/png" />
+                        <img class="program-picture-list__img" src="/images/program/desktop/donut4-desktop.png"
+                            alt="Donut">
+                    </picture>
                     <p class="program-picture-list__title">The host speaks</p>
                     <p class="program-picture-list__info">English, French</p>
                     <svg class="program-picture-list__icon" width="25" height="17">
                         <use href="./images/sprite.svg#icon-chat"></use>
                     </svg>
-                    
                 </li>
             </ul>
-            
-
-            
         </div>
     </div>
-    
-
 </section>
+
