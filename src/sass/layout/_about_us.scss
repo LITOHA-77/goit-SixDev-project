@@ -21,18 +21,14 @@
     width: 392px;
   }
 }
-.about-us__description {
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+.text-size {
+  margin-bottom: 10px;
   @media screen and (min-width: 1280px) {
-    &:not(:last-child) {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
+    &--last {
+      padding-bottom: 63px;
     }
   }
-}
-.about-us__description--hidden {
-  margin-bottom: 40px;
 }
 
 .about-us__bg {
