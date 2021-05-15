@@ -2,8 +2,18 @@
   padding-top: 307px;
 }
 .about-us__wrapper {
+  @media screen and (max-width: 767px) {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    margin-left: auto;
+  }
   @media screen and (min-width: 1280px) {
     line-height: $desktop-main-line-height;
+    width: 392px;
   }
 }
 .about-us__description {
@@ -21,8 +31,36 @@
   background-size: 290px cover;
   background-repeat: no-repeat;
   background-position: top 20px center;
+  @media screen and (min-width: 768px) {
+    background-image: url(/images/about/tablet/pic-tablet.png);
+    background-size: 330px cover;
+    background-repeat: no-repeat;
+    background-position: top 200px left 12px;
+    @media screen and (min-width: 1280px) {
+      background-image: url(/images/about/desktop/pic-desktop.png);
+      background-size: 512px cover;
+      background-repeat: no-repeat;
+      background-position: top 200px left 71px;
+    }
+  }
 }
-// пример
-#more {
+
+.description-seen#inputHiddenContent3,
+#inputShownContent3 {
+  display: none;
+}
+
+.description-ReadMore#spanHiddenContent3 {
+  display: none;
+}
+
+.description-seen#inputShownContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
+  display: block;
+}
+.description-seen#inputHiddenContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
+  display: none;
+}
+
+.description-seen#inputShownContent3:checked ~ #myReadMore .description--hidden {
   display: none;
 }
