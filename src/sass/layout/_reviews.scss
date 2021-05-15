@@ -1,8 +1,11 @@
 .name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
     font-style: italic;
     font-weight: 500;
     font-size: 14px;
-    line-height: 4.6428;
+    line-height: 1.2;
 }
 
 .reviews__foto {
@@ -27,7 +30,7 @@
         content: "\2606\2606\2606\2606\2606";
         display: block;
         color: #AB816C;
-        
+      
         
     }
 
