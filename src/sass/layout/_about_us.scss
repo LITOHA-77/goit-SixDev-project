@@ -1,5 +1,8 @@
 .about-us {
   padding-top: 307px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
 }
 .about-us__wrapper {
   @media screen and (max-width: 767px) {
@@ -35,12 +38,12 @@
     background-image: url(/images/about/tablet/pic-tablet.png);
     background-size: 330px cover;
     background-repeat: no-repeat;
-    background-position: top 200px left 12px;
+    background-position: top 80px left 12px;
     @media screen and (min-width: 1280px) {
       background-image: url(/images/about/desktop/pic-desktop.png);
       background-size: 512px cover;
       background-repeat: no-repeat;
-      background-position: top 200px left 71px;
+      background-position: top 65px left 71px;
     }
   }
 }
