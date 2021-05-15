@@ -31,3 +31,25 @@
   }
 }
 // кнопка пока не точная пусть будет так нужно написать ментору много не соответсвий делал на глаз
+
+.section-button {
+  display: inline-flex;
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  color: $button-background-color;
+  background-color: transparent;
+  border: none;
+//   @media screen and (min-width: 1280px){
+//     display: none;
+// }
+}
+
+
+.button-close {
+  z-index: 3;
+}
+

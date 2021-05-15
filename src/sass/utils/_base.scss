@@ -68,6 +68,11 @@ body {
   text-align: center;
   color: $main-text-color;
 
+  &--left {
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
   @media screen and (min-width: 1280px) {
     font-size: 36px;
     line-height: $desktop-section-title-line-height;
@@ -102,4 +107,8 @@ body {
   @media screen and (min-width: 1280px) {
     width: 852px;
   }
+}
+
+a {
+  cursor: pointer;
 }
