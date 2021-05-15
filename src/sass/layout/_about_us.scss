@@ -3,6 +3,9 @@
   @media screen and (min-width: 768px) {
     padding-top: 80px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 140px;
+  }
 }
 .about-us__wrapper {
   @media screen and (max-width: 767px) {
@@ -28,6 +31,10 @@
     }
   }
 }
+.about-us__description--hidden {
+  margin-bottom: 40px;
+}
+
 .about-us__bg {
   background-image: url(/images/about/mobile/pic-mobile.png);
   background-size: 290px cover;
@@ -46,23 +53,32 @@
     }
   }
 }
+@media screen and (max-width: 1279.99px) {
+  .description-seen#inputHiddenContent3,
+  #inputShownContent3 {
+    display: none;
+  }
 
-.description-seen#inputHiddenContent3,
-#inputShownContent3 {
-  display: none;
-}
+  .description-ReadMore#spanHiddenContent3 {
+    display: none;
+  }
 
-.description-ReadMore#spanHiddenContent3 {
-  display: none;
-}
+  .description-seen#inputShownContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
+    display: block;
+  }
+  .description-seen#inputHiddenContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
+    display: none;
+  }
 
-.description-seen#inputShownContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
-  display: block;
+  .description-seen#inputShownContent3:checked ~ #myReadMore .description--hidden {
+    display: none;
+  }
 }
-.description-seen#inputHiddenContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
-  display: none;
-}
-
-.description-seen#inputShownContent3:checked ~ #myReadMore .description--hidden {
-  display: none;
+@media screen and (min-width: 1280px) {
+  .description-seen {
+    display: none;
+  }
+  .section-button {
+    display: none;
+  }
 }
