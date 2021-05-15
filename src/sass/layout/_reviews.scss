@@ -11,20 +11,29 @@
     border-radius: 50%;
 }
 
+.form-rating {
+    display: flex;
+    justify-content: center;
+}
 
-.simple-rating {
+.rating {
     position: relative;
     display: inline-block;
     font-size: 24px;
+    
+    
 
     &::before {
-        content: "★★★★★";
+        content: "\2606\2606\2606\2606\2606";
         display: block;
+        color: #AB816C;
+        
+        
     }
 
 }
 
-.simple-rating__items {
+.rating__items {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,43 +45,28 @@
     
 }
 
-.simple-rating__item {
+.rating__item {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 0%;
     height: 0%;
     opacity: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
+    visibility: hidden;
 
-    &:checked,
-    &:checked ~ .simple-rating__label {
-        color: #AB816C;
-
-    }
 }
 
-.simple-rating__label {
+.rating__label {
     flex: 0 0 20%;
     height: 100%;
     cursor: pointer;
-    color: #FEF3E4;
-    
-
-    &::before {
-        content: "★";
-        display: block;
-
-    }
-
-    &:hover,
-    &:hover ~ &,
-    &:checked ~ &:hover {
-        color: #e4bdaa;
-
-    }
+    color: #FEF3E4; 
 
 }
 
+.rating__item:checked ~ .rating__label::before,
+.rating__item + .rating__label:hover ~ .rating__label::before, 
+.rating__item + .rating__label:hover::before {
+    content: "\2605";
+    color: #AB816C;
+}

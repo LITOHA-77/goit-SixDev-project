@@ -1,20 +1,115 @@
-.mobile-menu {
-  position: absolute;
-  display: block;
+.mobile-and-tablet-menu {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
 
-  @media screen and (min-width:1280px) {
+  opacity: 1;
+  background-color: $menu-background-color;
+  backdrop-filter: $menu-backdrop-filter;
+
+  // transform: scale(1,1);
+  transition: 
+  // transform $transition-background-color,
+    // top $transition-background-color, right $transition-background-color,
+    opacity $transition-background-color;
+
+  @media screen and (max-width: 1279.98px) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 
+  & .button__burger-menu {
+    display: none;
+  }
+
+  &.is-close {
+    opacity: 0;
+    pointer-events: none;
+    // top: -100vh;
+    // right: -100vw;
+    // transform: scale(0, 0);
+
+    & .button__burger-menu {
+      display: block;
+    }
+  }
 }
 
-.button__mobile-menu-open {
-  position: absolute;
-  right: 0;
-  top: 15px;
+.mobile-and-tablet-menu__container {
+  position: relative;
+  // background-color: burlywood;
+}
 
-  @media screen and (min-width:780px) {
+.mobile-and-tablet-menu__button {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+
+  height: 18px;
+  width: 30px;
+
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
     top: 25px;
   }
 
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &-icon--burger {
+    height: 16px;
+    width: 30px;
+  }
+
+  &-icon--close {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.mobile-and-tablet-menu__logo {
+  display: block;
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  &-icon {
+    height: 85px;
+    width: 190px;
+  }
+}
+
+.mobile-and-tablet-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+.mobile-and-tablet-menu__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2083;
+
+  &:hover,
+  &:focus {
+    color: $menu-hover-text-color;
+  }
 }

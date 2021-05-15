@@ -31,6 +31,7 @@
   }
 }
 // кнопка пока не точная пусть будет так нужно написать ментору много не соответсвий делал на глаз
+
 .section-button {
   display: inline-flex;
   font-family: Caveat Brush;
@@ -43,3 +44,9 @@
   background-color: transparent;
   border: none;
 }
+
+
+.button-close {
+  z-index: 3;
+}
+
