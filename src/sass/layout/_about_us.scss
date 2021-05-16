@@ -36,25 +36,78 @@
   background-size: 290px;
   background-repeat: no-repeat;
   background-position: top 20px center;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/about/mobile/pic-mobile.png),
-      url(/images/about/mobile/pic-mobile@2x.png);
-    @media screen and (min-width: 768px) {
-      background-image: url(/images/about/tablet/pic-tablet.png),
-        url(/images/about/tablet/pic-tablet@2x.png);
-      background-size: 330px;
-      background-repeat: no-repeat;
-      background-position: top 80px left 12px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/about/mobile/pic-mobile@2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(/images/about/tablet/pic-tablet.png);
+    background-size: 330px;
+    background-repeat: no-repeat;
+    background-position: top 80px left 12px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(images/about/tablet/pic-tablet@2x.png);
     }
-    @media screen and (min-width: 1280px) {
-      background-image: url(/images/about/desktop/pic-desktop.png),
-        url(/images/about/desktop/pic-desktop@2x.png);
-      background-size: 512px;
-      background-repeat: no-repeat;
-      background-position: top 65px left 71px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(/images/about/desktop/pic-desktop.png);
+    background-size: 512px;
+    background-repeat: no-repeat;
+    background-position: top 65px left 71px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/about/desktop/pic-desktop@2x.png);
     }
   }
 }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(/images/about/tablet/pic-tablet.png);
+//     background-size: 330px;
+//     background-repeat: no-repeat;
+//     background-position: top 80px left 12px;
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .about-us__bg {
+//     background-image: url(/images/about/mobile/pic-mobile@2x.png);
+//   }
+// }
+// .about-us__bg {
+//   @media screen and (min-width: 768px) {
+//     background-image: url(/images/about/tablet/pic-tablet.png);
+//     background-size: 330px;
+//     background-repeat: no-repeat;
+//     background-position: top 80px left 12px;
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .about-us__bg {
+//     background-image: url(images/about/tablet/pic-tablet@2x.png);
+//   }
+// }
+
+//    @media screen and (min-width: 1280px) {
+//      background-image: url(/images/about/desktop/pic-desktop.png),
+//        url(/images/about/desktop/pic-desktop@2x.png);
+//      background-size: 512px;
+//      background-repeat: no-repeat;
+//      background-position: top 65px left 71px;
+//    }
+//  }
 // пример
 @media screen and (max-width: 1279.99px) {
   .input#inputHiddenContent3,
