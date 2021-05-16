@@ -26,7 +26,7 @@
 .regisraton_tittle {
   left: 50%;
   top: 15px;
-
+  z-index: 5;
   transform: translate(-50%, 50%);
   position: absolute;
   padding: 0;
@@ -262,7 +262,6 @@
   width: 265px;
   border: none;
   margin-bottom: 2px;
-  // border-bottom: 1px solid transparent;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
   border-bottom: 0.1px solid $pagination-color;
@@ -274,13 +273,23 @@
 
 /* -----------------ХОВЕР И ФОКУС НА ИНПУТЫ-------------------- */
 
-.igeneral-input-registration:hover,
+.general-input-registration:hover,
 .general-input-registration:focus {
+  background-color: transparent;
+  color: black;
   outline: none;
   // border-color: #2196f3;
   border-color: rgb(120, 52, 3);
   transition: border-color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1.1);
+}
+
+.general-input-registration:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+
+.general-input-registration:not(:placeholder-shown):required:invalid {
+  border-color: red;
 }
 
 .form-registration_label1 {
@@ -318,9 +327,12 @@
 
 // ----------------Кнопка регистрации
 .form-registration_button {
-  position: absolute;
-  top: 110px;
-  right: 21px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 110px;
+    right: 21px;
+  }
+
   // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   // transform: scale(1);
   @media screen and (min-width: 1280px) {
