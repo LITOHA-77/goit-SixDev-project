@@ -8,6 +8,11 @@
     line-height: 1.2;
 }
 
+.text {
+    display: flex;
+    min-height: 220px;
+}
+
 .reviews__foto {
     margin-left: auto;
     margin-right: auto;
@@ -29,7 +34,7 @@
     &::before {
         content: "\2606\2606\2606\2606\2606";
         display: block;
-        color: #AB816C;
+        color: $button-background-color;
       
         
     }
@@ -71,5 +76,22 @@
 .rating__item + .rating__label:hover ~ .rating__label::before, 
 .rating__item + .rating__label:hover::before {
     content: "\2605";
-    color: #AB816C;
+    color: $button-background-color;
+}
+
+
+// Слайдер
+
+.slick-initialized .slick-slide {
+    text-align: center;
+    
+}
+
+.slider__counter {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+        
+    line-height: 1.2142;
+    color: $pagination-color;
 }
