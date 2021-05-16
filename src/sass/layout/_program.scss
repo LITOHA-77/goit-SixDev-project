@@ -14,15 +14,15 @@
   }
 }
 
-.program-wrapper {
-  font-size: 16px;
-  line-height: $main-line-height;
-  color: $main-text-color;
+// .program-wrapper {
+//   font-size: 16px;
+//   line-height: $main-line-height;
+//   color: $main-text-color;
 
-  @media screen and (min-width: 1280px) {
-    line-height: $desktop-main-line-height;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     line-height: $desktop-main-line-height;
+//   }
+// }
 
 .program-list__item::before {
   content: '\003E';
@@ -43,7 +43,6 @@
     margin-bottom: 10px;
   }
 }
-
 
 // .program__description--hidden {
 //   display: none;
@@ -76,11 +75,10 @@
   text-align: center;
   background-color: $program-background;
   border-radius: 50%;
-  
+
   @media screen and (min-width: 1280px) {
     max-width: 180px;
     height: 180px;
-    
   }
 }
 
@@ -91,18 +89,15 @@
   }
 }
 
-
 .program-picture-list__title {
   font-family: Caveat Brush;
   font-size: 18px;
   line-height: 1.27;
   color: $secondary-text-color;
 
-
   @media screen and (min-width: 1280px) {
     font-size: 24px;
     line-height: 1.25;
-    
   }
 }
 
@@ -121,7 +116,7 @@
   flex-basis: calc(100% - 40px / 2);
   display: flex;
   flex-wrap: wrap;
-  
+
   @media screen and (min-width: 768px) {
     align-content: flex-start;
   }
@@ -184,8 +179,31 @@
 
 .program__section-button {
   margin-bottom: 34px;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+  }
+}
+// пример
+@media screen and (max-width: 1279.99px) {
+  .input#inputHiddenContent4,
+  #inputShownContent4 {
+    display: none;
+  }
+
+  .span#spanHiddenContent4 {
+    display: none;
+  }
+
+  .input#inputShownContent4:checked ~ .span#spanHiddenContent4 {
+    display: block;
+  }
+
+  .input#inputHiddenContent4:checked ~ .span#spanHiddenContent4 {
+    display: none;
+  }
+
+  .input#inputShownContent4:checked ~ #myReadMore1 .p--hidden {
+    display: none;
   }
 }
