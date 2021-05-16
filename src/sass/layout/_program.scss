@@ -35,6 +35,12 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
+    .program__description--margin {
+      margin-bottom: 21px;
+    }
+    .program-list__item--margin:last-child {
+      margin-bottom: 21px;
+    }
   }
 }
 
@@ -102,6 +108,7 @@
 }
 
 .program-picture-list__info {
+  font-weight: inherit;
   font-size: 14px;
   line-height: 1.21;
   color: $secondary-text-color;

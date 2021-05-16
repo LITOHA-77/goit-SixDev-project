@@ -37,19 +37,32 @@
     max-width: 1280.22px;
     background-image: url(/images/hero/hero-desktop/spoon-desktop.png),
       url(/images/hero/hero-desktop/donuts-desktop.png),
-      url(/images/background/desktop/bg-desktop.png);
-    background-position: left, top right, bottom;
-    background-size: 178px, 710px, cover;
+      url(/images/background/desktop/bg-desktop.png), url(/images/about/desktop/pic-desktop.png);
+    background-position: left top 165px, top right, bottom, top 547px left 69px;
+    background-size: 142px, 719px, cover, 512px;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(/images/hero/hero-desktop/spoondesktop@2x.png),
         url(/images/hero/hero-desktop/donuts-desktop@2x.png),
-        url(/images/background/desktop/bg-desktop@2x.png);
+        url(/images/background/desktop/bg-desktop@2x.png),
+        url(/images/about/desktop/pic-desktop@2x.png);
     }
   }
 }
+// @media screen and (min-width: 1280px) {
+//     background-image: url(/images/about/desktop/pic-desktop.png);
+//     background-size: 512px;
+//     background-repeat: no-repeat;
+//     background-position: top 65px left 71px;
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(/images/about/desktop/pic-desktop@2x.png);
+//     }
+//   }
 .background-image--down {
   // height: 1214.6px;
   min-width: 320px;
