@@ -49,24 +49,26 @@
     }
   }
 }
+// пример
 @media screen and (max-width: 1279.99px) {
-  .description-seen#inputHiddenContent3,
+  .input#inputHiddenContent3,
   #inputShownContent3 {
     display: none;
   }
 
-  .description-ReadMore#spanHiddenContent3 {
+  .span#spanHiddenContent3 {
     display: none;
   }
 
-  .description-seen#inputShownContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
+  .input#inputShownContent3:checked ~ .span#spanHiddenContent3 {
     display: block;
   }
-  .description-seen#inputHiddenContent3:checked ~ .description-ReadMore#spanHiddenContent3 {
+
+  .input#inputHiddenContent3:checked ~ .span#spanHiddenContent3 {
     display: none;
   }
 
-  .description-seen#inputShownContent3:checked ~ #myReadMore .description--hidden {
+  .input#inputShownContent3:checked ~ #myReadMore .p--hidden {
     display: none;
   }
 }

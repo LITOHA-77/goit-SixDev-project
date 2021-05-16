@@ -22,7 +22,7 @@
     background-color: $button-click-background-color;
     border-color: $button-click-background-color;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 7px 43px 7px 43px;
     min-width: 158px;
     min-height: 45px;
@@ -43,9 +43,11 @@
   color: $button-background-color;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   //   @media screen and (min-width: 1280px){
   //     display: none;
   // }
+
 }
 
 .button-close {
