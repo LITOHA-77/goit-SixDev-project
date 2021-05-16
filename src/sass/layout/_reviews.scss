@@ -8,10 +8,6 @@
     line-height: 1.2;
 }
 
-.text {
-    display: flex;
-    min-height: 220px;
-}
 
 .reviews__foto {
     margin-left: auto;
@@ -94,4 +90,20 @@
         
     line-height: 1.2142;
     color: $pagination-color;
+}
+
+
+.slick-next:before, .slick-prev:before {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #674D40;
+    
+}
+
+.slick-next, .slick-prev {
+    top: 92%;
+    width: 95%;
+    
 }
