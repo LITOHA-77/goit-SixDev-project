@@ -42,6 +42,10 @@ body {
   }
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);

@@ -59,45 +59,55 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(/images/background/mobile/bg2-mobile@2x.png);
   }
+  
   @media screen and (min-width: 768px) {
     // height: 1259.99px;
     max-width: 773px;
-    background-image: url(/images/background/tablet/bg2-tablet.png);
-
-
+    background: 
+      url(/images/registration/tablet/regdonut-tablet.png) top 578px left/235px 255px no-repeat,
+      url(/images/registration/tablet/confetti-tablet.png) top 651px right/280px 374px no-repeat,
+      url(/images/background/tablet/bg2-tablet.png) top center no-repeat;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/background/tablet/bg2-tablet@2x.png);
+      background-image: 
+      url(/images/registration/tablet/regdonut-tablet@2x.png), 
+      url(/images/registration/tablet/confetti-tablet@2x.png),
+      url(/images/background/tablet/bg2-tablet@2x.png);
     }
   }
+
   @media screen and (min-width: 1280px) {
     // height: 1599.7px;
     max-width: 1285.78px;
-    background-image: url(/images/footer/desktop/flour-desktop.png), url(/images/background/desktop/bg2-desktop.png);
-    // background-repeat: no-repeat;
-    background-position: right bottom, top center;
-    background-size: 319px 184px, auto;
+    background: 
+      url(/images/registration/desktop/regdonut-desktop.png) top 686px left 63px/257px 255px no-repeat,
+      url(/images/registration/desktop/confetti-desktop.png) top 690px right/606px 589px no-repeat,
+      url(/images/footer/desktop/flour-desktop.png) right bottom/319px 184px no-repeat,
+      url(/images/background/desktop/bg2-desktop.png) top center no-repeat;
     
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/footer/desktop/flour-desktop@2x.png), 
-      url(/images/background/desktop/bg2-desktop@2x.png);
+      background-image: 
+        url(/images/registration/desktop/regdonut-desktop@2x.png),
+        url(/images/registration/desktop/confetti-desktop@2x.png)
+        url(/images/footer/desktop/flour-desktop@2x.png),
+        url(/images/background/desktop/bg2-desktop@2x.png);
     }
   }
 }
 
-
-// <фон> = background-image || background-position [ / background-size ]? || 
-// background-repeat || background-attachment || background-origin || 
+// <фон> = background-image || background-position [ / background-size ]? ||
+// background-repeat || background-attachment || background-origin ||
 // background-clip
