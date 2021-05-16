@@ -17,7 +17,7 @@
     margin-left: auto;
   }
   @media screen and (min-width: 1280px) {
-    line-height: $desktop-main-line-height;
+    line-height: 1.35;
     width: 392px;
   }
 }
@@ -25,9 +25,9 @@
   margin-bottom: 10px;
   @media screen and (min-width: 1280px) {
     margin-bottom: 21px;
-    &--last {
-      padding-bottom: 63px;
-    }
+    // &--last {
+    //   padding-bottom: 63px;
+    // }
   }
 }
 @media screen and (max-width: 1279.9px) {
