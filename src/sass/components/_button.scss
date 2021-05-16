@@ -1,18 +1,19 @@
 .button {
-  display: inline-flex;
-  padding: 9px 45px 8px 45px;
+  display: block;
+  text-align: center;
   min-width: 145px;
+  min-height: 40px;
+  padding-top: 9px;
+  padding-bottom: 8px;
   color: $button-text-color;
   background: $button-background-color;
   font-family: Caveat Brush;
   font-weight: 400;
-  font-size: 18px;
+  font-size: $main-font-size-desktop;
   line-height: 1.2;
   border: none;
   border-color: $button-background-color;
   border-radius: 25px;
-  min-width: 145px;
-  min-height: 40px;
   cursor: pointer;
   &:hover {
     background-color: $menu-hover-text-color;
@@ -23,11 +24,11 @@
     border-color: $button-click-background-color;
   }
   @media screen and (min-width: 1280px) {
-    padding: 7px 43px 7px 43px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     min-width: 158px;
     min-height: 45px;
     font-size: 24px;
-    line-height: 1.2;
   }
 }
 // кнопка пока не точная пусть будет так нужно написать ментору много не соответсвий делал на глаз
@@ -47,7 +48,6 @@
   //   @media screen and (min-width: 1280px){
   //     display: none;
   // }
-
 }
 
 .button-close {
