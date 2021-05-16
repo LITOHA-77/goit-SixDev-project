@@ -1,15 +1,9 @@
-// .registration {
-// }
-
 // ---------------------контейнер секциии регистрация------
 
 .regisraton_container {
-  // --------------------------ИЗОБРАЖЕНИЕ СЕРПАНТИНА------------------------------------
-
   padding-top: 30px;
   padding-bottom: 27px;
   width: 100%;
-  // height: 426px;
   height: 567px;
   position: relative;
 
@@ -21,13 +15,9 @@
     padding-top: 115px;
     padding-bottom: 51px;
     height: 426px;
-    // width: 634px;
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
-    // width: 822px;
-    // margin-left: auto;
-    // margin-right: auto;
   }
 }
 
@@ -42,9 +32,6 @@
   padding: 0;
   margin: 0;
   display: block;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin-bottom: 11px;
   width: 106px;
   height: 65px;
   @media screen and (min-width: 768px) {
@@ -55,6 +42,7 @@
 // ---------контейнер для контента и формы------
 
 .container_content {
+  position: relative;
   display: block;
   height: 510px;
   width: 290px;
@@ -183,18 +171,15 @@
 // ---------ФОРМА РЕГИСТРАЦИИ-- --------
 .form-registration {
   width: 265px;
-  height: 173px;
+  height: 297px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  // width: 100%;
-  // max-width: 448px;
-
+  justify-content: flex-start;
+  padding-top: 0;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  // margin-bottom: 37px;
 
   input {
     font-family: Montserrat;
@@ -217,13 +202,17 @@
     color: $input-text-color;
   }
   @media screen and (min-width: 768px) {
-    width: 234px;
+    width: 455px;
     height: 100%;
     padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 54px;
+    padding-bottom: 53px;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 0;
-    // height: 153px;
   }
 }
 
@@ -250,10 +239,6 @@
     padding-right: 20px;
     text-align: start;
   }
-  // @media screen and (min-width: 768px) {
-  //   font-size: 18px;
-  //   line-height: $desktop-main-line-height;
-  // }
   @media screen and (min-width: 1280px) {
     padding-right: 15px;
     margin-bottom: 13px;
@@ -278,30 +263,25 @@
   border: none;
   margin-bottom: 2px;
   // border-bottom: 1px solid transparent;
-  border-bottom: 1px solid $pagination-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  border-bottom: 0.1px solid $pagination-color;
   @media screen and (min-width: 768px) {
     width: 234px;
+    border-bottom: 1px solid $pagination-color;
   }
 }
 
-// .general-input-registration:placeholder-shown {
-//   border-color: blue;
-// }
+/* -----------------ХОВЕР И ФОКУС НА ИНПУТЫ-------------------- */
 
-// .general-label-registration:not(:placeholder-shown):required:invalid {
-//   border-color: #4caf50;
-// }
-
-// .general-label-registration:valid {
-//   border-color: #4caf50;
-// }
-
-// .general-label-registration:invalid {
-//   border-color: #f44336;
-// }
-// .general-label-registration:invalid {
-//   border: none;
-// }
+.igeneral-input-registration:hover,
+.general-input-registration:focus {
+  outline: none;
+  // border-color: #2196f3;
+  border-color: rgb(120, 52, 3);
+  transition: border-color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
 
 .form-registration_label1 {
   margin-bottom: 25px;
@@ -324,63 +304,27 @@
 
 // }
 
-// .form-registration_label3 {
-//   // margin-bottom: 37px;
-// }
+.form-registration_label3 {
+  margin-bottom: 37px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
 
 // .form-registration_input3 {
 
 //   // border-bottom: 0px solid $pagination-color;
 // }
 
-// ---------ФОРМА BUTTON-- --------
-
-.container_content-button {
-  height: 124px;
-  width: 100%;
-  padding-top: 37px;
-  padding-bottom: 47px;
-  @media screen and (min-width: 768px) {
-    // transform: rotate(90deg);
-    width: 186px;
-    height: 100%;
-    padding: 0;
-    padding-left: 25px;
-    padding-top: 110px;
-    padding-bottom: 110px;
-    padding-right: 21px;
-  }
-  @media screen and (min-width: 1280px) {
-    // transform: rotate(90deg);
-    width: 294px;
-    height: 100%;
-    padding: 0;
-    padding-left: 38px;
-    padding-top: 110px;
-    padding-bottom: 105px;
-    padding-right: 98px;
-  }
-}
-
+// ----------------Кнопка регистрации
 .form-registration_button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $pagination-color;
-  border-radius: 25px;
-  width: 145px;
-  height: 40px;
-  font-family: Caveat Brush;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  // line-height: 3.6;
-  text-align: center;
-  color: $button-text-color;
-  border: none;
+  position: absolute;
+  top: 110px;
+  right: 21px;
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transform: scale(1);
   @media screen and (min-width: 1280px) {
-    width: 158px;
-    height: 45px;
-    font-size: 24px;
+    top: 110px;
+    right: 98px;
   }
 }
