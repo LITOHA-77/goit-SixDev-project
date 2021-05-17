@@ -1,16 +1,20 @@
-
+.section-contact {
+  @media screen and (min-width: 1280px) {
+    padding-top: 53px;
+  }
+}
 .contact__text {
   line-height: 4.06;
   text-align: center;
 }
 
 .contact__field {
-    width: 265px;
-    position: relative;
-    margin-bottom: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 265px;
+  position: relative;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     width: 410px;
@@ -18,29 +22,29 @@
   }
   @media screen and (min-width: 1280px) {
     width: 430px;
-    }
+  }
 }
 
 .contact__input {
-    width: inherit;
-    height: 22px;
-    border: none;
-    border-bottom: 1px solid $pagination-color;
-    background-color: transparent;
+  width: inherit;
+  height: 22px;
+  border: none;
+  border-bottom: 1px solid $pagination-color;
+  background-color: transparent;
 }
 
 .contact__label {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: $input-text-color;
-    
-    .contact__input:focus + &,
-    .contact__input:hover + &,
-    .contact__input:not(:placeholder-shown) + & {
-        transform: translateY(-29px);
-    }
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $input-text-color;
+
+  .contact__input:focus + &,
+  .contact__input:hover + &,
+  .contact__input:not(:placeholder-shown) + & {
+    transform: translateY(-29px);
+  }
 }
 
 .contact__button {
@@ -54,7 +58,7 @@
   color: $button-text-color;
   font-family: $second-font;
   font-size: 18px;
-//   line-height: 3.61;
+  //   line-height: 3.61;
   text-align: center;
   cursor: pointer;
 
@@ -62,6 +66,7 @@
     width: 158px;
     height: 45px;
     font-size: 24px;
+    margin-bottom: 0;
     // line-height: 1.81;
   }
 
