@@ -1,8 +1,4 @@
 .program {
-  padding-bottom: 50px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 0px;
-  }
   @media screen and (min-width: 1280px) {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -186,7 +182,7 @@
 }
 
 .program__section-button {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
