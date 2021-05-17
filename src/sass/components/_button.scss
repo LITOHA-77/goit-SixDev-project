@@ -7,21 +7,21 @@
   padding-bottom: 8px;
   color: $button-text-color;
   background: $button-background-color;
-  font-family: Caveat Brush;
+  font-family: $second-font;
   font-weight: 400;
   font-size: $main-font-size-desktop;
   line-height: 1.2;
   border: none;
-  border-color: $button-background-color;
+  // border-color: $button-background-color;
   border-radius: 25px;
   cursor: pointer;
   &:hover {
     background-color: $menu-hover-text-color;
-    border-color: $menu-hover-text-color;
+    // border-color: $menu-hover-text-color;
   }
   &:focus {
     background-color: $button-click-background-color;
-    border-color: $button-click-background-color;
+    // border-color: $button-click-background-color;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 7px;
