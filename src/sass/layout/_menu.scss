@@ -1,13 +1,13 @@
 .mobile-and-tablet-menu {
-  z-index: 2;
+  z-index: 6;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   min-width: 320px;
-  text-align: center;  
+  text-align: center;
   overflow-y: scroll;
-  opacity: 1;  
+  opacity: 1;
   background-color: $menu-background-color;
   backdrop-filter: $menu-backdrop-filter;
   // transform: scale(1,1);
@@ -123,5 +123,3 @@
     color: $menu-current-text-color;
   }
 }
-
-
