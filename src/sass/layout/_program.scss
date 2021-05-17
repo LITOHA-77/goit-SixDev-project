@@ -1,10 +1,7 @@
 .program {
-  padding-bottom: 50px;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 45px;
-  }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 68px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
@@ -35,6 +32,12 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
+    .program__description--margin {
+      margin-bottom: 21px;
+    }
+    .program-list__item--margin:last-child {
+      margin-bottom: 21px;
+    }
   }
 }
 
@@ -102,6 +105,7 @@
 }
 
 .program-picture-list__info {
+  font-weight: inherit;
   font-size: 14px;
   line-height: 1.21;
   color: $secondary-text-color;
@@ -178,7 +182,7 @@
 }
 
 .program__section-button {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;

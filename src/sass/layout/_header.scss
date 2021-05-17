@@ -1,6 +1,6 @@
 .header__container {
   position: relative;
- text-align: center;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -10,10 +10,10 @@
 .header__navigation {
   display: inline-flex;
   align-items: center;
-  
+
   padding-top: 10px;
-  margin-bottom: 30px;  
-  
+  margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     padding-top: 25px;
     margin-bottom: 10px;
@@ -26,10 +26,8 @@
 }
 
 .header__logo {
-  
   @media screen and (min-width: 1280px) {
     margin-right: 40px;
-    
   }
 
   &-icon {
@@ -64,6 +62,7 @@
   margin-bottom: 5px;
   font-family: Caveat Brush, sans-serif;
   font-size: 30px;
+  font-weight: inherit;
   line-height: $main-title-line-height;
 
   @media screen and (min-width: 1280px) {
@@ -89,7 +88,7 @@
 }
 
 .header__button {
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;

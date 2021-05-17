@@ -1,97 +1,108 @@
-.name {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
+.title--reviews {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
 }
-
-.text {
-    display: flex;
-    min-height: 220px;
+.name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .reviews__foto {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
 .form-rating {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .rating {
-    position: relative;
-    display: inline-block;
-    font-size: 24px;
-    
-    
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
 
-    &::before {
-        content: "\2606\2606\2606\2606\2606";
-        display: block;
-        color: $button-background-color;
-      
-        
-    }
-
+  &::before {
+    content: '\2606\2606\2606\2606\2606';
+    display: block;
+    color: $button-background-color;
+  }
 }
 
 .rating__items {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
 }
 
 .rating__item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .rating__label {
-    flex: 0 0 20%;
-    height: 100%;
-    cursor: pointer;
-    color: #FEF3E4; 
-
+  flex: 0 0 20%;
+  height: 100%;
+  cursor: pointer;
+  color: #fef3e4;
 }
 
 .rating__item:checked ~ .rating__label::before,
-.rating__item + .rating__label:hover ~ .rating__label::before, 
+.rating__item + .rating__label:hover ~ .rating__label::before,
 .rating__item + .rating__label:hover::before {
-    content: "\2605";
-    color: $button-background-color;
+  content: '\2605';
+  color: $button-background-color;
 }
-
 
 // Слайдер
 
 .slick-initialized .slick-slide {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .slider__counter {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-        
-    line-height: 1.2142;
-    color: $pagination-color;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+  line-height: 1.2142;
+  color: $pagination-color;
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 80px;
+  }
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #674d40;
+}
+
+.slick-next,
+.slick-prev {
+  top: 92%;
+  width: 95%;
 }

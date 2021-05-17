@@ -5,11 +5,11 @@
       menu: document.querySelector('[data-menu]'),
     };
   
-    refs.openMenuBtn.addEventListener('click', toggleModal);
-    refs.closeMenuBtn.addEventListener('click', toggleModal);
+  refs.openMenuBtn.addEventListener('click', toggleModal);
+  refs.closeMenuBtn.addEventListener('click', toggleModal);
   
   function toggleModal() {
-      document.body.classList.toggle("is-open");
+      document.body.classList.toggle("scroll-lock");
       refs.menu.classList.toggle('is-close');
     }
   })();
