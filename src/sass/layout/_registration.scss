@@ -18,6 +18,8 @@
   }
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-top: 143px;
+    padding-bottom: 22px;
   }
 }
 
@@ -36,6 +38,10 @@
   height: 65px;
   @media screen and (min-width: 768px) {
     top: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 35px;
+    left: 48%;
   }
 }
 
