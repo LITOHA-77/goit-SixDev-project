@@ -1,19 +1,20 @@
-
-    <section class="section-contact">
+ <section class="section-contact">
         <a id="contact-section"></a>
         <div class="container">
+
         <h2 class="title">Contact</h2>
         <p class="contact__text">We will answer any question!</p>
         <form>
             <div class="contact__field">
-            <input class="contact__input" type="email" id="contact-email" placeholder=" " required>
+            <input class="contact__input" type="email" id="contact-email" placeholder=" " minlength="3" maxlength="30" required>
             <label class="contact__label" for="contact-email">Email</label>
             </div>
             <div class="contact__field">
-            <input class="contact__input" type="text" id="contact-question" placeholder=" " required>
+            <input class="contact__input" type="text" id="contact-question" placeholder=" " pattern="^[A-Za-zА-Яа-яЁё\s]+$+^[ 0-9]+$" minlength="3" maxlength="500" required>
             <label class="contact__label" for="contact-question">Type your question</label>
             </div>
-            <button class="contact__button" type="submit">Send</button>
+            <button class="button contact__button" type="submit">Send</button>
         </form>
-        </div>
-    </section>
+    </div>
+</section>
+

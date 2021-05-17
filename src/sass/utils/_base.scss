@@ -117,3 +117,9 @@ body {
 a {
   cursor: pointer;
 }
+
+// стилизация аутлайна
+*:focus,
+*:hover {
+  outline-color: $pagination-color;
+}

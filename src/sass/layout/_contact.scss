@@ -1,3 +1,4 @@
+
 .section-contact {
   padding-top: 48px;
   @media screen and (min-width: 768px) {
@@ -7,6 +8,7 @@
     padding-top: 53px;
   }
 }
+
 .contact__text {
   line-height: 4.06;
   text-align: center;
@@ -15,14 +17,20 @@
 .contact__field {
   width: 265px;
   position: relative;
-  margin-bottom: 25px;
+
+  // margin-bottom: 25px;
+  //размер увеличен от макета
+  margin-bottom: 30px;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
     width: 410px;
-    margin-bottom: 15px;
+    // margin-bottom: 20px;
+    //размер увеличен от макета
+    margin-bottom: 25px;
   }
   @media screen and (min-width: 1280px) {
     width: 430px;
@@ -35,6 +43,13 @@
   border: none;
   border-bottom: 1px solid $pagination-color;
   background-color: transparent;
+
+
+  &:not(:placeholder-shown):required:invalid {
+    color: $registration-form-input-invalid;
+    // border-bottom: 2px solid $registration-form-input-invalid;
+  }
+
 }
 
 .contact__label {
@@ -44,14 +59,22 @@
   transform: translateY(-50%);
   color: $input-text-color;
 
+  transition: transform, opacity 250ms linear;
+  opacity: 1;
+
+
   .contact__input:focus + &,
   .contact__input:hover + &,
   .contact__input:not(:placeholder-shown) + & {
-    transform: translateY(-29px);
+
+    // transform: translateY(-30px);
+    transform: translateY(-35px);
+    opacity: 0.5;
   }
 }
 
 .contact__button {
+
   display: block;
   margin: 10px auto 0px auto;
   width: 145px;
@@ -82,4 +105,5 @@
     background-color: $button-click-background-color;
     border-color: $button-click-background-color;
   }
+
 }
