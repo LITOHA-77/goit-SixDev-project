@@ -23,6 +23,9 @@
 }
 .text-size {
   margin-bottom: 10px;
+  &--last {
+    display: block;
+  }
   @media screen and (min-width: 1280px) {
     margin-bottom: 21px;
     // &--last {
@@ -30,6 +33,7 @@
     // }
   }
 }
+
 @media screen and (max-width: 1279.9px) {
   .about-us__bg {
     background-image: url(/images/about/mobile/pic-mobile.png);
