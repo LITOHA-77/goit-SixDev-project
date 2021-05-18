@@ -1,23 +1,25 @@
 // ---------------------контейнер секциии регистрация------
-
-.regisraton_container {
+.registration {
   padding-top: 30px;
   padding-bottom: 27px;
-  width: 100%;
-  height: 567px;
-  position: relative;
   @media screen and (min-width: 768px) {
-    padding: 0;
-
-    // width: 100%;
-    text-align: center;
     padding-top: 115px;
     padding-bottom: 51px;
-    height: 426px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 143px;
-    padding-bottom: 22px;
+    padding-bottom: 77px;
+  }
+}
+.regisraton_container {
+  width: 100%;
+  // height: 567px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    // width: 100%;
+    text-align: center;
+    // height: 426px;
   }
 }
 
@@ -35,10 +37,10 @@
   width: 106px;
   height: 65px;
   @media screen and (min-width: 768px) {
-    top: 10px;
+    top: -110px;
   }
   @media screen and (min-width: 1280px) {
-    top: 35px;
+    top: -100px;
     left: 48%;
   }
 }
@@ -335,3 +337,34 @@
     right: 70px;
   }
 }
+
+// .background-first-bottom__registration {
+//   @media screen and (min-width: 768px) {
+//     background-image: url(/images/registration/tablet/regdonut-tablet.png),
+//       url(/images/registration/tablet/confetti-tablet.png);
+//     background-position: top 525px left, top 597px right;
+//     background-size: 235px, 280px;
+//     background-repeat: no-repeat;
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(/images/registration/tablet/regdonut-tablet@2x.png),
+//         url(/images/registration/tablet/confetti-tablet@2x.png);
+//     }
+//   }
+//   @media screen and (min-width: 1280px) {
+//     background: url(/images/registration/desktop/regdonut-desktop.png),
+//       url(/images/registration/desktop/confetti-desktop.png);
+//     background-position: top 94px left 69px, top 117px right -14px;
+//     background-size: 257px, 589px 618px;
+//     background-repeat: no-repeat;
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(/images/registration/desktop/regdonut-desktop@2x.png),
+//         url(/images/registration/desktop/confetti-desktop@2x.png);
+//     }
+//   }
+// }
