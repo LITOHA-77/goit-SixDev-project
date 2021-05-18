@@ -1,0 +1,140 @@
+
+$hamburger-hover-opacity      : 0.7;
+$hamburger-active-hover-opacity: 1;
+
+$hamburger-line-width         : 30px;
+$hamburger-line-height        : 2px;
+$hamburger-line-spacing       : 5px;
+$hamburger-line-color         : #2e2520;
+$hamburger-line-hover-color   : #876655;
+$hamburger-line-border-radius : 1px;
+$hamburger-line-active-color  : #674d40;
+
+.hamburger-button {
+  z-index: 10;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+
+  padding: 4px;
+  display: inline-block;
+  cursor: pointer;
+
+  transition: opacity 150ms linear;
+
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+
+  &:hover {
+          opacity: $hamburger-hover-opacity;
+   }
+
+  &.is-active {
+    &:hover {
+              opacity: $hamburger-active-hover-opacity;
+          }
+
+    .hamburger-button__inner,
+    .hamburger-button__inner::before,
+    .hamburger-button__inner::after {
+      background-color: $hamburger-line-active-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.hamburger-button__box {
+  width: $hamburger-line-width;
+  height: $hamburger-line-height * 3 + $hamburger-line-spacing * 2;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-button__inner {
+  display: block;
+  top: 50%;
+  // transform: translateY(-50%);
+  margin-top: $hamburger-line-height / -2;
+
+  &,
+  &::before,
+  &::after {
+    width: $hamburger-line-width;
+    height: $hamburger-line-height;
+    background-color: $hamburger-line-color;
+    border-radius: $hamburger-line-border-radius;
+    position: absolute;
+    transition: transform 150ms ease;   
+
+    // @media screen and (min-width: 950px) and (max-width: 1170px) {
+    //   background-color: #fff;
+    // }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    top: ($hamburger-line-spacing + $hamburger-line-height) * -1;
+  }
+
+  &::after {
+    bottom: ($hamburger-line-spacing + $hamburger-line-height) * -1;
+  }
+}
+
+
+.hamburger-button--spin {
+    .hamburger-button__inner {
+      transition-duration: 0.22s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+      &::before {
+        transition: top 0.1s 0.25s ease-in,
+                    opacity 0.1s ease-in;
+      }
+
+      &::after {
+        transition: bottom 0.1s 0.25s ease-in,
+                    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      }
+    }
+
+    &.is-active {
+      .hamburger-button__inner {
+        transform: rotate(225deg);
+        transition-delay: 0.12s;
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &::before {
+          top: 0;
+          opacity: 0;
+          transition: top 0.1s ease-out,
+                      opacity 0.1s 0.12s ease-out;
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-90deg);
+          transition: bottom 0.1s ease-out,
+                      transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+      }
+    }
+  }
