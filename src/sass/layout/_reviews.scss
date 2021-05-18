@@ -32,7 +32,7 @@
   &::before {
     content: '\2606\2606\2606\2606\2606';
     display: block;
-    color: $button-background-color;
+    color: $rating-color;
   }
 }
 
@@ -61,14 +61,14 @@
   flex: 0 0 20%;
   height: 100%;
   cursor: pointer;
-  color: #fef3e4;
+  color: $reviws-bg-color;
 }
 
 .rating__item:checked ~ .rating__label::before,
 .rating__item + .rating__label:hover ~ .rating__label::before,
 .rating__item + .rating__label:hover::before {
   content: '\2605';
-  color: $button-background-color;
+  color: $rating-color;
 }
 
 // Слайдер
