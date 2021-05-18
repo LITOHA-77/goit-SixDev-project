@@ -10,6 +10,7 @@
 .social-list__item {
   &:not(:last-child) {
     margin-right: 9.5px;
+   
   }
 
   @media screen and (min-width: 1280px) {
@@ -30,16 +31,24 @@
 .social-list__link {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  
+  
+   &:hover .social-list__icon,
+  &:focus .social-list__icon {
+    fill: $button-hover-background-color;
+    
+  
 }
 
 .social-list__icon {
   fill: $main-text-color;
-  height: 15px;
-  .social-list__link &:hover,
-  .social-list__link &:focus {
-    fill: $button-text-color;
-    background-color: $button-hover-background-color;
+  height: 15px;  
+  transition: fill $transition-background-color;
   }
+
   &--footer {
     align-items: flex-start;
   }
