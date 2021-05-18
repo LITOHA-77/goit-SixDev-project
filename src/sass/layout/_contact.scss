@@ -1,13 +1,12 @@
-
-.section-contact {
-  padding-top: 48px;
-  @media screen and (min-width: 768px) {
-    padding-top: 56px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 53px;
-  }
-}
+// .section-contact {
+//   padding-top: 48px;
+//   @media screen and (min-width: 768px) {
+//     padding-top: 56px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     padding-top: 53px;
+//   }
+// }
 
 .contact__text {
   line-height: 4.06;
@@ -44,12 +43,10 @@
   border-bottom: 1px solid $pagination-color;
   background-color: transparent;
 
-
   &:not(:placeholder-shown):required:invalid {
     color: $registration-form-input-invalid;
     // border-bottom: 2px solid $registration-form-input-invalid;
   }
-
 }
 
 .contact__label {
@@ -62,11 +59,9 @@
   transition: transform, opacity 250ms linear;
   opacity: 1;
 
-
   .contact__input:focus + &,
   .contact__input:hover + &,
   .contact__input:not(:placeholder-shown) + & {
-
     // transform: translateY(-30px);
     transform: translateY(-35px);
     opacity: 0.5;
@@ -74,7 +69,6 @@
 }
 
 .contact__button {
-
   display: block;
   margin: 10px auto 0px auto;
   width: 145px;
@@ -105,5 +99,4 @@
     background-color: $button-click-background-color;
     border-color: $button-click-background-color;
   }
-
 }
