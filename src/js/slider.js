@@ -64,3 +64,55 @@ if ($slider.length) {
     ]
   });
 }
+
+
+
+// $(function() {
+	
+// 	$(".news__slider").on("init reInit afterChange", function(event, slick) {
+// 		$(".news__counter").html(
+// 			slick.slickCurrentSlide() + 1 + "/" + slick.slideCount
+// 		);
+// 	});
+
+//   $('.slider-text').slick({
+//     dots: false,
+//     arrows: true,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     autoplaySpeed: 1000,
+//     asNavFor: '.slider',
+//     responsive: [
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       }, 
+//     ]
+//   });
+//   $('.slider').slick({
+//     dots: false,
+//     arrows: false,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: false,
+//     autoplaySpeed: 1000,
+//     asNavFor: '.slider-text',
+//     responsive: [
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       },
+//     ]
+//   });
+// })
