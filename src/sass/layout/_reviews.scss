@@ -104,8 +104,9 @@
 .slick-next,
 .slick-prev {
   display: flex;
-  top: 92%;
-  width: 95%;
+  top: 95%;
+  width: 80%;
+  justify-content: center;
 }
 
 .slick-prev {
@@ -114,4 +115,29 @@
 
 .slick-next {
   right: 0;
+}
+// .slick-slide {
+//   padding-bottom: 0;
+// }
+.slick-center {
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    // padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 30px;
+    // padding-bottom: 40px;
+  }
+}
+.slick-center img {
+  min-width: 110px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 186px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    mon-width: 234px;
+  }
 }
