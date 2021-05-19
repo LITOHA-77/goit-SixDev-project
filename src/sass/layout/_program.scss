@@ -64,6 +64,8 @@
   position: absolute;
   bottom: 75%;
   left: 25%;
+  --animate-duration: 4000ms;
+ 
 }
 
 .program-picture-list__item {
@@ -184,11 +186,12 @@
 
 .program__section-button {
   margin-bottom: 40px;
-
+   
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
+
 // пример
 @media screen and (max-width: 1279.99px) {
   .input#inputHiddenContent4,
@@ -212,3 +215,4 @@
     display: none;
   }
 }
+

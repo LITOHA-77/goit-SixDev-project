@@ -62,6 +62,11 @@
   //   @media screen and (min-width: 1280px){
   //     display: none;
   // }
+  transition: color $transition-background-color;
+  &:hover {
+    color: $menu-hover-text-color;}
+  &:focus {
+    color: $button-click-background-color;}
 }
 
 .button-close {
