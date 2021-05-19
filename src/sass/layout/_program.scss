@@ -70,6 +70,7 @@
   bottom: 75%;
   left: 25%;
   --animate-duration: 4000ms;
+  animation-direction: alternate-reverse;
 }
 
 .program-picture-list__item {
