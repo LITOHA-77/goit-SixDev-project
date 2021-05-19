@@ -1,0 +1,27 @@
+.scroll-up {
+  z-index: 20;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-up__button {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+
+    animation-iteration-count: infinite;
+    animation-duration: 2500ms;
+    animation-name: blink;
+  }
+}
