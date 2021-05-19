@@ -1,4 +1,12 @@
 $transition-menu-opacity: $transition-background-color;
+.menu__container {
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  // background-color: aquamarine;
+}
 
 .mobile-and-tablet-menu {
   z-index: 6;
@@ -29,11 +37,6 @@ $transition-menu-opacity: $transition-background-color;
   }
 }
 
-.mobile-and-tablet-menu__container {
-  position: relative;
-  // background-color: aquamarine;
-}
-
 .mobile-and-tablet-menu__logo {
   display: block;
   padding-top: 25px;
@@ -43,6 +46,16 @@ $transition-menu-opacity: $transition-background-color;
     height: 85px;
     width: 190px;
   }
+
+  &:hover .icon-logo,
+  &:focus .icon-logo {
+    fill: $menu-hover-text-color;
+  }
+
+  // &:active .icon-logo {
+  //   fill: $menu-current-text-color;
+  // }
+
 }
 
 .mobile-and-tablet-menu__item {
