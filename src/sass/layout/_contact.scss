@@ -51,16 +51,103 @@
 
   &:hover,
   &:focus {
-    outline: none;
-    border-color: $button-click-background-color;
     transform: scale(1.1);
-    padding-left: 10px;
+    outline: none;
     font-weight: 500;
+    padding-left: 10px;
+    border-left: 1px solid $pagination-color;
+    border-right: 1px solid $pagination-color;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 8px 5px -5px rgba(49, 34, 6, 0.6);
+    -moz-box-shadow: 0px 8px 5px -5px rgba(49, 34, 6, 0.6);
+    box-shadow: 0px 8px 5px -5px rgba(49, 34, 6, 0.6);
   }
 }
 
 .contact__textarea {
   resize: none;
+}
+
+[tooltip] {
+  position: relative;
+
+  &::before,
+  &::after {
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    text-transform: none;
+    font-size: 0.9em;
+  }
+
+  &::before {
+    content: '';
+    z-index: 1001;
+    border: 5px solid transparent;
+  }
+
+  &::after {
+    content: attr(tooltip);
+    z-index: 1000;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    min-width: 3em;
+    max-width: 21em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1ch 1.5ch;
+    border-radius: 0.3ch;
+    box-shadow: 0 1em 2em -0.5em rgba(49, 34, 6, 0.75);
+    background: $input-text-color;
+    color: $button-text-color;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    display: block;
+  }
+
+  &:not([flow])::before,
+  &[flow^='up']::before {
+    bottom: 100%;
+    border-bottom-width: 0;
+    border-top-color: #333;
+  }
+  &:not([flow])::after,
+  &[flow^='up']::after {
+    bottom: calc(100% + 5px);
+  }
+  &:not([flow])::before,
+  &:not([flow])::after,
+  &[flow^='up']::before,
+  &[flow^='up']::after {
+    left: 50%;
+    transform: translate(-50%, -0.5em);
+  }
+  &:not([flow]):hover::before,
+  &:not([flow]):hover::after,
+  &[flow^='up']:hover::before,
+  &[flow^='up']:hover::after {
+    animation: tooltips-vert 300ms ease-out forwards;
+  }
+}
+
+@keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: 0.9;
+    transform: translate(0, -50%);
+  }
 }
 
 .contact__label {
