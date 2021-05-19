@@ -19,21 +19,17 @@
   }
   @media screen and (min-width: 768px) {
     height: 622px;
-    background-image: url(/images/hero/hero-tablet/donuts-tablet.png),
-      url(/images/background/tablet/bg-tablet.png);
-    background-position: top right 141px, bottom;
-    background-size: 377px, cover;
+    background-image: url(/images/background/tablet/bg-tablet.png);
+    background-position: bottom;
+    background-size: cover;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/hero/hero-tablet/donutstablet@2x.png),
-        url(/images/background/tablet/bg-tablet@2x.png);
+      background-image: url(/images/background/tablet/bg-tablet@2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
-    // position: relative;
-    // z-index: 1;
     height: 1078px;
     background-image: url(/images/hero/hero-desktop/spoon-desktop.png),
       url(/images/hero/hero-desktop/donuts-desktop.png),
@@ -50,53 +46,36 @@
         url(/images/background/desktop/bg-desktop@2x.png);
     }
   }
-  // @media screen and (min-width: 1280px) {
-  //   // position: relative;
-  //   // z-index: 1;
-  //   height: 1078px;
-  //   background-image: url(/images/hero/hero-desktop/spoon-desktop.png),
-  //     url(/images/hero/hero-desktop/donuts-desktop.png),
-  //     url(/images/background/desktop/bg-desktop.png), url(/images/about/desktop/pic-desktop.png);
-  //   background-position: left top 165px, top right, bottom, top 567px left 69px;
-  //   background-size: 142px, 719px, cover, 491px;
-  //   background-color: $registration-form-background;
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(/images/hero/hero-desktop/spoondesktop@2x.png),
-  //       url(/images/hero/hero-desktop/donuts-desktop@2x.png),
-  //       url(/images/background/desktop/bg-desktop@2x.png),
-  //       url(/images/about/desktop/pic-desktop@2x.png);
-  //   }
-  // }
-  // &::after {
-  //   @media screen and (min-width: 1280px) {
-  //     position: absolute;
-  //     z-index: 0;
-  //     content: '';
-  //     bottom: 0;
-  //     right: 485px;
-  //     width: 515px;
-  //     height: 546px;
-  //     background-image: url(/images/about/desktop/pic-desktop.png);
-  //     background-size: cover;
-  //     background-position: top center;
-  //     background-repeat: no-repeat;
-  //     @media (min-device-pixel-ratio: 2),
-  //       (-webkit-min-device-pixel-ratio: 2),
-  //       (min-resolution: 192dpi),
-  //       (min-resolution: 2dppx) {
-  //       background-image: url(/images/about/desktop/pic-desktop@2x.png);
-  //     }
-  //   }
-  // }
 }
-// @media screen and (max-width: 1279.9px) {
+.header__container {
+  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
+    &::before {
+      position: absolute;
+      content: '';
+      pointer-events: none;
+      top: 0;
+      right: 20px;
+      width: 378px;
+      height: 396px;
+      background-image: url(/images/hero/hero-tablet/donuts-tablet.png);
+      background-position: top right 69px;
+      background-size: 377px;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(/images/hero/hero-tablet/donutstablet@2x.png);
+      }
+    }
+  }
+}
 .about-us__wrapper {
   &::before {
     position: absolute;
     content: '';
+    pointer-events: none;
     top: -308px;
     width: 100%;
     height: 309px;
@@ -130,9 +109,9 @@
     @media screen and (min-width: 1280px) {
       position: absolute;
       z-index: 0;
-      top: -49px;
+      top: -72px;
       right: 485px;
-      width: 515px;
+      width: 512px;
       height: 546px;
       background-image: url(/images/about/desktop/pic-desktop.png);
       background-size: cover;
@@ -147,7 +126,6 @@
     }
   }
 }
-// }
 
 .background-first-bottom {
   max-height: 1215px;
@@ -156,7 +134,7 @@
   margin-right: auto;
   background-image: url(/images/background/mobile/bg2-mobile.png);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top 11px center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),

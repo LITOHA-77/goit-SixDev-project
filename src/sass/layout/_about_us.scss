@@ -4,7 +4,7 @@
     padding-top: 80px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 130px;
+    padding-top: 155px;
   }
 }
 .about-us__wrapper {
@@ -23,24 +23,28 @@
   }
 }
 
-.text-size {
+.about-us__description-indent-size {
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 21px;
+    }
+  }
   &--last {
     display: block;
-  }
-  &--last {
     margin-top: 10px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 21px;
-    // &--last {
-    //   padding-bottom: 63px;
-    // }
+    @media screen and (min-width: 768px) {
+      margin-top: 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 21px;
+    }
   }
 }
 
 // пример
-@media screen and (max-width: 1279.99px) {
+@media screen and (max-width: 1279.9px) {
   .input#inputHiddenContent3,
   #inputShownContent3 {
     display: none;
