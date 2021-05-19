@@ -278,7 +278,7 @@
 
 .general-input-registration:hover,
 .general-input-registration:focus {
-  text-align: center;
+  padding-left: 10px;
   font-weight: 500;
   // padding-left: 15px;
   color: $input-text-color;
@@ -288,9 +288,13 @@
 }
 
 .general-input-registration:not(:placeholder-shown):required:invalid {
-  background-color: red;
-  color: yellowgreen;
-  text-align: center;
+  background-color: $registration-form-input-invalid;
+  padding-left: 15px;
+  // text-align: center;
+}
+
+.general-input-registration:not(:placeholder-shown) {
+  color: $main-text-color;
 }
 
 .form-registration_label1 {

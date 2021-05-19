@@ -1,4 +1,3 @@
-
 // .section-contact {
 //   padding-top: 48px;
 //   @media screen and (min-width: 768px) {
@@ -9,29 +8,22 @@
 //   }
 // }
 
-
 .contact__text {
   line-height: 4.06;
   text-align: center;
 }
 
-.contact__field {
+.contact__label {
   width: 265px;
-  position: relative;
-
-  margin-bottom: 25px;
-  //размер увеличен от макета
-  // margin-bottom: 30px;
-
+  // position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     width: 410px;
     margin-bottom: 20px;
-    //размер увеличен от макета
-    // margin-bottom: 25px;
   }
   @media screen and (min-width: 1280px) {
     width: 430px;
@@ -44,49 +36,51 @@
   border: none;
   border-bottom: 1px solid $pagination-color;
   background-color: transparent;
+  color: $input-text-color;
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-  &:not(:placeholder-shown):required:invalid {
-    color: $registration-form-input-invalid;
+  &:not(:placeholder-shown) {
+    color: $main-text-color;
   }
 
-
+  &:not(:placeholder-shown):required:invalid {
+    background-color: $registration-form-input-invalid;
+  }
 
   &:hover,
   &:focus {
-    color: $main-text-color;
     outline: none;
     border-color: $button-click-background-color;
     transform: scale(1.1);
+    padding-left: 10px;
+    font-weight: 500;
   }
-
 }
 
 .contact__label {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  color: $input-text-color;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(-50%) scale(1);
-  // transition: transform, opacity 250ms linear;
-  opacity: 1;
-
-  // .contact__input:focus + &,
-  // .contact__input:hover + &,
-  .contact__input:not(:placeholder-shown) + & {
-    // transform: translateY(-150%) scale(1.1);
-    opacity: 0;
-
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact__button {
+//   // position: absolute;
+//   left: 0;
+//   top: 50%;
 
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   transform: translateY(-50%) scale(1);
+//   // transition: transform, opacity 250ms linear;
+//   opacity: 1;
+
+//   // .contact__input:focus + &,
+//   // .contact__input:hover + &,
+//   .contact__input:not(:placeholder-shown) + & {
+//     // transform: translateY(-150%) scale(1.1);
+//     opacity: 0;
+//   }
+
+.contact__button {
   margin: 10px auto 0px auto;
   display: block;
   text-align: center;

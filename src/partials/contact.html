@@ -7,12 +7,15 @@
         <p class="contact__text">We will answer any question!</p>
         <form>
             <div class="contact__field">
-            <input class="contact__input" type="email" id="contact-email" placeholder=" " minlength="3" maxlength="30" required>
-            <label class="contact__label" for="contact-email">Email</label>
+            
+            <label class="contact__label" for="contact-email"><input class="contact__input" type="email" id="contact-email" placeholder="Email" minlength="3" maxlength="30"
+                title="freddy@gmail.com" required autocomplete="off"></label>
             </div>
             <div class="contact__field">
-            <input class="contact__input" type="text" id="contact-question" placeholder=" " pattern="^[A-Za-zА-Яа-яЁё\s]+$+^[ 0-9]+$" minlength="3" maxlength="500" required>
-            <label class="contact__label" for="contact-question">Type your question</label>
+            
+            <label class="contact__label" for="contact-question"><input class="contact__input" type="texaria" id="contact-question" placeholder="Type your question"
+                pattern="^[A-Za-zА-Яа-яЁё\s]+$+^[ 0-9]+$" minlength="1" maxlength="500" required title="Type your question"
+                autocomplete="off"></label>
             </div>
             <button class="button contact__button" type="submit">Send</button>
         </form>
