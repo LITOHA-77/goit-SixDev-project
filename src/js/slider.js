@@ -32,12 +32,13 @@ $('.slider-text').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    // variableWidth: true,
     asNavFor: '.slider',
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -52,16 +53,16 @@ $('.slider-text').slick({
     infinite: true,
     centerMode: true,
     centerPadding: '30px',
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
+    // autoplay: true,
+    autoplaySpeed: 2000,
     asNavFor: '.slider-text',
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

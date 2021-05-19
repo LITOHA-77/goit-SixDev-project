@@ -92,34 +92,68 @@
   }
 }
 
-.slick-next:before,
-.slick-prev:before {
-  font-family: $main-font;
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: #674d40;
-}
-
-.slick-next,
 .slick-prev {
-  display: flex;
-  top: 95%;
-  width: 80%;
-  justify-content: center;
-}
+  top: 92%;
+  left: 30%;
 
-.slick-prev {
-  left: 0;
+  @media screen and (min-width: 768px) {
+    top: 91%;
+    left: 37%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 38%;
+  }
+
+  &:before {
+    content: '\2014';
+    font-family: $main-font;
+    font-size: 35px;
+    line-height: 1;
+    opacity: 1;
+    color: $pagination-color;
+  }
+
+  &:hover::before {
+    content: '\27F5';
+    color: $pagination-hover-color;
+  }
+
+  &:active::before {
+    color: $pagination-click-color;
+  }
 }
 
 .slick-next {
-  right: 0;
+  top: 92%;
+  // left: 58%;
+  right: 35%;
+
+  @media screen and (min-width: 768px) {
+    top: 90%;
+    right: 40%;
+  }
+
+  &:before {
+    content: '\2014';
+    font-family: $main-font;
+    font-size: 35px;
+    line-height: 1;
+    opacity: 1;
+    color: $pagination-color;
+  }
+
+  &:hover::before {
+    content: '\27F6';
+    color: $pagination-hover-color;
+  }
+
+  &:active::before {
+    color: $pagination-click-color;
+  }
 }
-// .slick-slide {
-//   padding-bottom: 0;
-// }
-.slick-center {
+
+.slider .slick-center {
   @media screen and (min-width: 768px) {
     padding-top: 20px;
     // padding-bottom: 40px;
@@ -130,7 +164,7 @@
     // padding-bottom: 40px;
   }
 }
-.slick-center img {
+.slider .slick-center img {
   min-width: 110px;
 
   @media screen and (min-width: 768px) {
@@ -138,6 +172,18 @@
   }
 
   @media screen and (min-width: 1280px) {
-    mon-width: 234px;
+    min-width: 234px;
   }
+}
+// For one slider
+
+// .text {
+//   display: none;
+// }
+// .slick-center .text {
+//   display: block;
+// }
+
+.slick-list {
+  overflow: hidden;
 }
