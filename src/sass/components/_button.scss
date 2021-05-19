@@ -19,6 +19,9 @@
   transform: scale(1);
   &:hover {
     background-color: $menu-hover-text-color;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
+    -moz-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
+    box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
 
     // border-color: $menu-hover-text-color;
   }
@@ -29,14 +32,11 @@
     border-color: $menu-hover-text-color;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
+    -moz-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
+    box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
   }
-  &:focus {
-    background-color: $button-click-background-color;
-    border-color: $button-click-background-color;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(1.05);
 
-  }
   @media screen and (min-width: 1280px) {
     padding-top: 7px;
     padding-bottom: 7px;
@@ -64,9 +64,11 @@
   // }
   transition: color $transition-background-color;
   &:hover {
-    color: $menu-hover-text-color;}
+    color: $menu-hover-text-color;
+  }
   &:focus {
-    color: $button-click-background-color;}
+    color: $button-click-background-color;
+  }
 }
 
 .button-close {

@@ -52,7 +52,7 @@ $('.slider-text').slick({
     arrows: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '30px',
+    centerPadding: '20px',
     // adaptiveHeight: true,
     speed: 300,
     slidesToShow: 3,

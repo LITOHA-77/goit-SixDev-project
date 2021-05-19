@@ -1,0 +1,19 @@
+@keyframes blink {
+    0% {
+      background-color: $button-background-color;
+      transform: scale(1);
+      opacity: 0.5;
+    }
+
+    50% {
+      background-color: $button-click-background-color;
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+
+    100% {
+      background-color: $button-background-color;
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
