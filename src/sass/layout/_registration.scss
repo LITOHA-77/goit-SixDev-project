@@ -277,19 +277,19 @@
 
 .general-input-registration:hover,
 .general-input-registration:focus {
-  color: $main-text-color;
+  text-align: center;
+  font-weight: 500;
+  // padding-left: 15px;
+  color: $input-text-color;
   outline: none;
-  // border-color: #2196f3;
   border-color: $button-click-background-color;
   transform: scale(1.1);
 }
 
-// .general-input-registration:not(:placeholder-shown):required:valid {
-//   border-color: green;
-// }
-
 .general-input-registration:not(:placeholder-shown):required:invalid {
-  color: $registration-form-input-invalid;
+  background-color: red;
+  color: yellowgreen;
+  text-align: center;
 }
 
 .form-registration_label1 {

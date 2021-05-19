@@ -21,21 +21,23 @@
                     Apply your personal info for registration
                 </p>
                 <label class="general-label-registration form-registration_label2">
-                
-                    <input class="general-input-registration form-registration_input1" type="text" name="username" placeholder="Your name" pattern="^[a-zA-Z]+$+[0-9]{6,10}" required/>
+             
+                    <input class="general-input-registration form-registration_input1" type="text" name="username" placeholder="Your name" 
+                    pattern="[A-Za-z]{3,}" title="Will" required autocomplete="off"/>
                 </label>
                 <label class="general-label-registration form-registration_label2">
               
-                    <input class="general-input-registration form-registration_input2" type="tel" name="tel"  pattern="[0-9]{9,15}" placeholder="Phone number" required />
+                    <input class="general-input-registration form-registration_input2" type="tel" name="tel"  pattern="[0-9]{9,15}" 
+                    placeholder="Phone number" title="0958555548" required autocomplete="off"/>
                 </label>
                 <label class="general-label-registration form-registration_label3">
                    
-                    <input class="general-input-registration form-registration_input3" type="email" name="email"  pattern="/\A[^@]+@([^@\.]+\.)+[^@\.]+\z/" placeholder="Email" required />
+                    <input class="general-input-registration form-registration_input3" type="email" name="email"  
+                    pattern="/\A[^@]+@([^@\.]+\.)+[^@\.]+\z/" placeholder="Email" title="freddy@gmail.com" required autocomplete="off"/>
                 </label >
                  <button class="form-registration_button button">Register</button>
             </form>
         
-<!-- [\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}+ -->
              
         </div>
     </div>
