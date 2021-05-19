@@ -57,7 +57,7 @@ $('.slider-text').slick({
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     asNavFor: '.slider-text',
     responsive: [
