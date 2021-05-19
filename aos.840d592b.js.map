@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/aos.js"],"names":["AOS","init","duration","easing"],"mappings":";AAAAA,IAAIC,KAAK,CACLC,SAAU,IACZC,OAAQ","file":"aos.840d592b.js","sourceRoot":"../src","sourcesContent":["AOS.init({\n    duration: 2000,\n  easing: 'ease-in-out-back',\n  \n});"]}
