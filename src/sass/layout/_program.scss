@@ -41,6 +41,11 @@
     }
   }
 }
+@media screen and (max-width: 1280px) {
+  .program-list__iitem--margin__last {
+    margin-bottom: 0;
+  }
+}
 
 .program__title {
   @media screen and (min-width: 1280px) {
@@ -65,7 +70,6 @@
   bottom: 75%;
   left: 25%;
   --animate-duration: 4000ms;
- 
 }
 
 .program-picture-list__item {
@@ -186,7 +190,7 @@
 
 .program__section-button {
   margin-bottom: 40px;
-   
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -215,4 +219,3 @@
     display: none;
   }
 }
-
