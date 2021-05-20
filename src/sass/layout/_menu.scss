@@ -34,29 +34,29 @@ $transition-menu-opacity: $transition-background-color;
     opacity: 0;
     pointer-events: none;
   }
-}
 
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+}
 .mobile-and-tablet-menu__logo {
   display: block;
   padding-top: 25px;
   margin-bottom: 40px;
 
   &-icon {
+    pointer-events: none;
     height: 85px;
     width: 190px;
   }
-
-  &:hover .icon-logo,
-  &:focus .icon-logo {
-    fill: $menu-hover-text-color;
+    &:hover .icon-logo,
+    &:focus .icon-logo {
+      fill: $menu-hover-text-color;
+    }
   }
-}
 
-.mobile-and-tablet-menu__item {
-  &:not(:last-child) {
-    margin-bottom: 45px;
-  }
-}
 
 .mobile-and-tablet-menu__link {
   font-weight: 500;
