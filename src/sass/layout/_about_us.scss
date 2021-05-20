@@ -10,16 +10,16 @@
 .about-us__wrapper {
   position: relative;
   @media screen and (max-width: 767px) {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
   @media screen and (min-width: 768px) {
     width: 336px;
     margin-left: auto;
   }
   @media screen and (min-width: 1280px) {
-    line-height: 1.35;
     width: 392px;
+    line-height: 1.35;
   }
 }
 
@@ -43,31 +43,30 @@
   }
 }
 
-// пример
 @media screen and (max-width: 1279.9px) {
-  .input#inputHiddenContent3,
+  .about-us__input#inputHiddenContent3,
   #inputShownContent3 {
     display: none;
   }
 
-  .span#spanHiddenContent3 {
+  .about-us__span#spanHiddenContent3 {
     display: none;
   }
 
-  .input#inputShownContent3:checked ~ .span#spanHiddenContent3 {
+  .about-us__input#inputShownContent3:checked ~ .about-us__span#spanHiddenContent3 {
     display: block;
   }
 
-  .input#inputHiddenContent3:checked ~ .span#spanHiddenContent3 {
+  .about-us__input#inputHiddenContent3:checked ~ .about-us__span#spanHiddenContent3 {
     display: none;
   }
 
-  .input#inputShownContent3:checked ~ #myReadMore .p--hidden {
+  .about-us__input#inputShownContent3:checked ~ #myReadMore .about-us__description--hidden {
     display: none;
   }
 }
 @media screen and (min-width: 1280px) {
-  .description-seen {
+  .about-us__description-seen {
     display: none;
   }
   .section-button {
