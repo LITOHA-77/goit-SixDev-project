@@ -18,17 +18,23 @@
   transform: scale(1);
   &:hover {
     background-color: $menu-hover-text-color;
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
-    -moz-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
     box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
+    animation-name: hvr-button;
+    animation-duration: 900ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes hvr-button {
+    to {
+      transform: scale(1.1);
+    }
   }
   &:focus {
     background-color: $button-click-background-color;
     border-color: $menu-hover-text-color;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.05);
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
-    -moz-box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
     box-shadow: 0px 0px 10px 2px rgba(49, 34, 6, 0.75) inset;
   }
 

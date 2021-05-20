@@ -10,11 +10,7 @@
   opacity: 1;
   background-color: $menu-background-color;
   backdrop-filter: $menu-backdrop-filter;
-  // transform: scale(1,1);
-  transition: 
-  // transform $transition-background-color,
-    // top $transition-background-color, right $transition-background-color,
-    opacity $transition-background-color;
+  transition: opacity $transition-background-color;
 
   @media screen and (max-width: 1279.98px) {
     width: 100vw;
@@ -32,9 +28,6 @@
   &.is-close {
     opacity: 0;
     pointer-events: none;
-    // top: -100vh;
-    // right: -100vw;
-    // transform: scale(0, 0);
 
     & .button__burger-menu {
       display: block;
@@ -44,7 +37,6 @@
 
 .mobile-and-tablet-menu__container {
   position: relative;
-  // background-color: burlywood;
 }
 
 .mobile-and-tablet-menu__button {
@@ -65,7 +57,7 @@
   justify-content: center;
 
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $transition-fill;
 
   &:hover .mobile-and-tablet-menu__button-icon,
   &:focus .mobile-and-tablet-menu__button-icon {
@@ -112,7 +104,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2083;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-color;
 
   &:hover,
   &:focus {

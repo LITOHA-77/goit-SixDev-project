@@ -5,7 +5,6 @@ $transition-menu-opacity: $transition-background-color;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  // background-color: aquamarine;
 }
 
 .mobile-and-tablet-menu {
@@ -19,7 +18,7 @@ $transition-menu-opacity: $transition-background-color;
   overflow-y: scroll;
   opacity: 1;
   background-color: $menu-background-color;
-  backdrop-filter: $menu-backdrop-filter;  
+  backdrop-filter: $menu-backdrop-filter;
   transition: opacity $transition-menu-opacity;
 
   @media screen and (max-width: 1279.98px) {
@@ -51,11 +50,6 @@ $transition-menu-opacity: $transition-background-color;
   &:focus .icon-logo {
     fill: $menu-hover-text-color;
   }
-
-  // &:active .icon-logo {
-  //   fill: $menu-current-text-color;
-  // }
-
 }
 
 .mobile-and-tablet-menu__item {
@@ -68,7 +62,7 @@ $transition-menu-opacity: $transition-background-color;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2083;
-  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-color;
 
   &:hover,
   &:focus {
