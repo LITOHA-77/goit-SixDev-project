@@ -3,14 +3,13 @@
   flex-direction: row;
   justify-content: center;
   &--footer {
-    align-items: flex-start;    
+    align-items: flex-start;
   }
 }
 
 .social-list__item {
   &:not(:last-child) {
     margin-right: 9.5px;
-   
   }
 
   @media screen and (min-width: 1280px) {
@@ -34,7 +33,6 @@
   justify-content: center;
   width: 25px;
   height: 25px;
-  
   transform: translateZ(0);
 
    &:hover .social-list__icon,
@@ -53,10 +51,11 @@
   }
 }
 
-.social-list__icon {
-  fill: $main-text-color;
-  height: 15px;  
-  transition: fill $transition-background-color;
+
+  .social-list__icon {
+    fill: $main-text-color;
+    height: 15px;
+    transition: fill $transition-background-color;
   }
 
   &--footer {

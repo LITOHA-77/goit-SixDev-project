@@ -52,16 +52,15 @@
     &::before {
       position: absolute;
       content: '';
-      pointer-events: none;
       top: 0;
       right: 20px;
       width: 378px;
       height: 396px;
+      pointer-events: none;
       background-image: url(/images/hero/hero-tablet/donuts-tablet.png);
       background-position: top right 69px;
       background-size: 377px;
       background-repeat: no-repeat;
-
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -75,15 +74,14 @@
   &::before {
     position: absolute;
     content: '';
-    pointer-events: none;
     top: -308px;
     width: 100%;
     height: 309px;
+    pointer-events: none;
     background-image: url(/images/about/mobile/pic-mobile.png);
     background-position: center;
     background-size: 290px;
     background-repeat: no-repeat;
-
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -242,11 +240,11 @@
     }
   }
   &::after {
+    pointer-events: none;
     @media screen and (min-width: 768px) {
       position: absolute;
-      z-index: 0;
       content: '';
-      pointer-events: none;
+      z-index: 0;
       top: 15px;
       right: -66px;
       width: 280px;

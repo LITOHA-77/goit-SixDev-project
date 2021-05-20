@@ -1,7 +1,6 @@
 .footer {
   padding-top: 47px;
   padding-bottom: 19px;
-
   @media screen and (min-width: 768px) {
     padding-top: 50px;
     padding-bottom: 21px;
@@ -25,7 +24,7 @@
 .address-block__link {
   display: flex;
   align-items: center;
-  //   transition: ;
+  transition: $transition-background-color;
   &:hover,
   &:focus {
     color: $menu-hover-text-color;
@@ -35,5 +34,4 @@
   display: block;
   margin-right: 3px;
   fill: currentColor;
-  // transition: $transition-fill;
 }
