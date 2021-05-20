@@ -93,23 +93,9 @@
   bottom: 75%;
   left: 25%;
 
-  // animation: roll-in-left 2000ms cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-  
-
-  --animate-duration: 4000ms;
-  animation-direction: alternate-reverse;
-
-}
-// @keyframes roll-in-left {
-//   0% {
-//     transform: translateX(-800px) rotate(-540deg);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateX(0) rotate(0deg);
-//     opacity: 1;
-//   }
-// }
+  animation: rollIn 2500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+   
+  }
 
 
 .program-picture-list__item {
