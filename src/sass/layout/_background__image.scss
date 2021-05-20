@@ -246,6 +246,7 @@
       position: absolute;
       z-index: 0;
       content: '';
+      pointer-events: none;
       top: 15px;
       right: -66px;
       width: 280px;
