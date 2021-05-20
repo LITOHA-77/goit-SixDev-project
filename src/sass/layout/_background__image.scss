@@ -155,7 +155,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    max-height: 1500px;
+    max-height: 1499px;
     background: url(/images/background/desktop/bg2-desktop.png);
     background-position: top center;
     background-size: cover;
@@ -262,12 +262,12 @@
       }
     }
     @media screen and (min-width: 1280px) {
-      top: -48px;
-      right: -230px;
+      top: -45px;
+      right: -218px;
       width: 589px;
       height: 618px;
       background-image: url(/images/registration/desktop/confetti-desktop.png);
-      background-size: cover;
+      background-size: 589px 594px;
       background-position: top center;
       background-repeat: no-repeat;
       @media (min-device-pixel-ratio: 2),
