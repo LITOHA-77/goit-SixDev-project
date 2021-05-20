@@ -3,27 +3,16 @@
     padding-top: 16px;
   }
 }
-// .title--reviews {
-//   @media screen and (min-width: 1280px) {
-//     margin-bottom: 40px;
-//   }
-// }
-.name {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-}
 
-.reviews__foto {
+//СЛАЙДЕР 1
+
+.slider__foto {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
 
+// Рейтинг
 .form-rating {
   display: flex;
   justify-content: center;
@@ -76,50 +65,89 @@
   color: $rating-color;
 }
 
-// Слайдер
+// Имя
+.slider__name {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+// Центр-мод
+.slider .slick-center {
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 30px;
+  }
+
+  & img {
+    min-width: 110px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 186px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      min-width: 234px;
+    }
+  }
+}
+
+// СЛАЙДЕР 2
 
 .slick-initialized .slick-slide {
   text-align: center;
 }
 
-.text--mobile {
+.slider-text__item {
   display: none;
-  @media screen and (max-width: 767.9px) {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
+
+  &--mobile {
+    @media screen and (max-width: 767.9px) {
+      display: inline-flex;
+    }
+  }
+
+  &--tablet {
+    @media screen and (min-width: 768px) and (max-width: 1279.9px) {
+      display: inline-flex;
+    }
+  }
+
+  &--desktop {
+    @media screen and (min-width: 1280px) {
+      display: inline-flex;
+    }
   }
 }
 
-.text--tablet {
-  display: none;
-  @media screen and (min-width: 768px) and (max-width: 1279.9px) {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.text--descktop {
-  display: none;
-  @media screen and (min-width: 1280px) {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.slider__counter {
+// Счетчик
+.slider-text__counter {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   line-height: 1.2142;
   color: $pagination-color;
+
   @media screen and (min-width: 768px) {
     padding-top: 35px;
   }
 }
 
+// Стрелка влево
 .slick-prev {
   top: 92%;
   left: 30%;
@@ -153,9 +181,9 @@
   }
 }
 
+// Стрелка вправо
 .slick-next {
   top: 92%;
-  // left: 58%;
   right: 35%;
   transition: color $transition-background-color;
 
@@ -181,39 +209,4 @@
   &:active::before {
     color: $pagination-click-color;
   }
-}
-
-.slider .slick-center {
-  @media screen and (min-width: 768px) {
-    padding-top: 20px;
-    // padding-bottom: 40px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 30px;
-    // padding-bottom: 40px;
-  }
-}
-.slider .slick-center img {
-  min-width: 110px;
-
-  @media screen and (min-width: 768px) {
-    min-width: 186px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    min-width: 234px;
-  }
-}
-// For one slider
-
-// .text {
-//   display: none;
-// }
-// .slick-center .text {
-//   display: block;
-// }
-
-.slick-list {
-  overflow: hidden;
 }
