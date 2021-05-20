@@ -1,11 +1,10 @@
-
 var $slider = $('.slider-text');
 
 if ($slider.length) {
   var currentSlide;
   var slidesCount;
   var sliderCounter = document.createElement('div');
-  sliderCounter.classList.add('slider__counter');
+  sliderCounter.classList.add('slider-text__counter');
   
   var updateSliderCounter = function(slick, currentIndex) {
     currentSlide = slick.slickCurrentSlide() + 1;
@@ -32,9 +31,6 @@ $('.slider-text').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    // variableWidth: true,
     asNavFor: '.slider',
     responsive: [
       {
@@ -53,12 +49,11 @@ $('.slider-text').slick({
     infinite: true,
     centerMode: true,
     centerPadding: '20px',
-    // adaptiveHeight: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     asNavFor: '.slider-text',
     responsive: [
       {
