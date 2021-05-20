@@ -1,5 +1,5 @@
 .header__container {
- text-align: center;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -7,14 +7,8 @@
 }
 
 .header__navigation {
-  // z-index: 6;
-  // position: fixed;
-  // top: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
-  
   display: inline-flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
 
   padding-top: 10px;
@@ -33,9 +27,6 @@
 }
 
 .header__logo {
-  // border-radius: 25%;
-  // background-color: rgba(254, 243, 228, 0.699);  
-
   @media screen and (min-width: 1280px) {
     margin-right: 40px;
   }
