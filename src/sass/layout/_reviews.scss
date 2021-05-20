@@ -1,18 +1,13 @@
-// .reviews__container Содержимое удалить после завершения работ над секцией и с html удалить класс
-// .reviews__container {
-//   height: 498px;
-//   @media screen and (min-width: 768px) {
-//     height: 517px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     height: 595px;
-//   }
-// }
-.title--reviews {
+.reviews {
   @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
+    padding-top: 16px;
   }
 }
+// .title--reviews {
+//   @media screen and (min-width: 1280px) {
+//     margin-bottom: 40px;
+//   }
+// }
 .name {
   display: flex;
   justify-content: center;
