@@ -214,24 +214,32 @@
 
 // пример
 @media screen and (max-width: 1279.9px) {
-  .input#inputHiddenContent4,
+  .program__input#inputHiddenContent4,
   #inputShownContent4 {
     display: none;
   }
 
-  .span#spanHiddenContent4 {
+  .program__span#spanHiddenContent4 {
     display: none;
   }
 
-  .input#inputShownContent4:checked ~ .span#spanHiddenContent4 {
+  .program__input#inputShownContent4:checked ~ .program__span#spanHiddenContent4 {
     display: block;
   }
 
-  .input#inputHiddenContent4:checked ~ .span#spanHiddenContent4 {
+  .program__input#inputHiddenContent4:checked ~ .program__span#spanHiddenContent4 {
     display: none;
   }
 
-  .input#inputShownContent4:checked ~ #myReadMore1 .about-us__description--hidden {
+  .program__input#inputShownContent4:checked ~ #myReadMore1 .program__description--hidden {
     display: none;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .program__description-seen {
+    display: none;
+  }
+  .section-button {
+    display: none;
+  }}
