@@ -35,12 +35,22 @@
   width: 25px;
   height: 25px;
   
-  
+  transform: translateZ(0);
+
    &:hover .social-list__icon,
   &:focus .social-list__icon {
     fill: $button-hover-background-color;
     
-  
+    animation-name: hvr-pulse-grow;
+    animation-duration: 550ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes hvr-pulse-grow {
+  to {
+    transform: scale(1.4);
+  }
 }
 
 .social-list__icon {
