@@ -241,19 +241,19 @@
 .form-registration__item-label {
   height: 23px;
   border: none;
-  &--label-name {
+  &--name {
     margin-bottom: 25px;
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
   }
-  &--label-tel {
+  &--tel {
     margin-bottom: 25px;
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
   }
-  &--label-mail {
+  &--mail {
     margin-bottom: 37px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0;

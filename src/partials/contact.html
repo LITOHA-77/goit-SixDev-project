@@ -1,20 +1,37 @@
- <section class="section-contact">
-        <a id="contact-section"></a>
-        <div class="container">
-
-        <h2 class="title">Contact</h2>
-        <p class="contact__text">We will answer any question!</p>
-        <form>
-            <div class="contact__field">
-            <label tooltip="freddy@gmail.com" class="contact__label" for="contact-email"><input class="contact__input" type="email" id="contact-email" placeholder="Email" minlength="3" maxlength="30"
-                required autocomplete="off"></label>
-            </div>
-            <div class="contact__field">
-            <label tooltip="...type your question" class="contact__label" for="contact-question"><textarea class="contact__input contact__textarea" type="textarea" id="contact-question" placeholder="Type your question"
-                pattern="^[A-Za-zА-Яа-яЁё\s]+$+^[ 0-9]+$" rows="1" minlength="1" maxlength="500" required></textarea></label>
-            </div>
-            <button class="button contact__button" type="submit">Send</button>
-        </form>
-    </div>
+<section class="section-contact">
+  <a id="contact-section"></a>
+  <div class="container">
+    <h2 class="title">Contact</h2>
+    <p class="contact__text">We will answer any question!</p>
+    <form>
+      <div class="contact__field">
+        <label class="contact__label" for="contact-email" data-tooltip="freddy@gmail.com">
+          <input
+            class="contact__input"
+            type="email"
+            id="contact-email"
+            placeholder="Email"
+            minlength="3"
+            maxlength="30"
+            required
+            autocomplete="off"
+        /></label>
+      </div>
+      <div class="contact__field">
+        <label class="contact__label" for="contact-question" data-tooltip="...type your question">
+          <textarea
+            class="contact__input contact__textarea"
+            id="contact-question"
+            placeholder="Type your question"
+            pattern="^[A-Za-zА-Яа-яЁё\s]+$+^[ 0-9]+$"
+            rows="1"
+            minlength="1"
+            maxlength="500"
+            required
+          ></textarea>
+        </label>
+      </div>
+      <button class="button contact__button" type="submit">Send</button>
+    </form>
+  </div>
 </section>
-
