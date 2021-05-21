@@ -48,7 +48,7 @@
     border-left: 1px solid $pagination-color;
     border-right: 1px solid $pagination-color;
     border-radius: 5px;
-    box-shadow: 0px 8px 5px -5px rgba(49, 34, 6, 0.6);
+    box-shadow: $form-registration-input-box-shadow;
   }
 }
 
@@ -89,7 +89,7 @@
     text-overflow: ellipsis;
     padding: 1ch 1.5ch;
     border-radius: 0.3ch;
-    box-shadow: 0 1em 2em -0.5em rgba(49, 34, 6, 0.75);
+    box-shadow: $contact-textareabox-shadow;
     background: $input-text-color;
     color: $button-text-color;
   }

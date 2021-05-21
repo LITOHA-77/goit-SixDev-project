@@ -1,4 +1,17 @@
 .icon-logo {
   fill: $main-text-color;
+  &:hover,
+  &:focus {
+    color: $menu-hover-text-color;
+    animation-name: hvr-button;
+    animation-duration: 900ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes hvr-button {
+    to {
+      transform: scale(1.1);
+    }
+  }
 }
-

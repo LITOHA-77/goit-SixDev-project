@@ -22,7 +22,7 @@
 
 // ---------заголовок секции------
 
-.regisraton-tittle {
+.title--regisraton {
   left: 50%;
   top: -14px;
   z-index: 5;
@@ -52,7 +52,7 @@
   align-items: center;
   height: 510px;
   width: 290px;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  box-shadow: $regisraton-container-box-shadow;
   border-radius: 150px 150px 0px 0px;
   padding-bottom: 47px;
   background-color: $registration-form-background;
@@ -173,26 +173,24 @@
   align-items: center;
   padding-top: 0;
   margin: 0;
-
-  input {
+  &__input {
     font-family: Montserrat;
     color: $input-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-  }
-
-  input::-webkit-input-placeholder {
-    color: $input-text-color;
-  }
-  input:-ms-input-placeholder {
-    color: $input-text-color;
-  }
-  input::-ms-input-placeholder {
-    color: $input-text-color;
-  }
-  input::placeholder {
-    color: $input-text-color;
+    &::-webkit-input-placeholder {
+      color: $input-text-color;
+    }
+    &:-ms-input-placeholder {
+      color: $input-text-color;
+    }
+    &::-ms-input-placeholder {
+      color: $input-text-color;
+    }
+    &::placeholder {
+      color: $input-text-color;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 455px;
@@ -240,14 +238,32 @@
 
 // -----------ОБЩИЕ СТИИ НА LABEL--------
 
-.form-registration__item {
+.form-registration__item-label {
   height: 23px;
   border: none;
+  &--label-name {
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  &--label-tel {
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  &--label-mail {
+    margin-bottom: 37px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // -----------ОБЩИЕ СТИИ НА INPUT--------
 
-.general-input-registration {
+.form-registration__item-input {
   width: 265px;
   border: none;
   margin-bottom: 2px;
@@ -259,25 +275,19 @@
     width: 234px;
     border-bottom: 1px solid $pagination-color;
   }
-}
-
-/* -----------------ХОВЕР И ФОКУС НА ИНПУТЫ-------------------- */
-
-.general-input-registration:hover,
-.general-input-registration:focus {
-  padding-left: 10px;
-  font-weight: 500;
-  color: $main-text-color;
-  outline: none;
-  border-color: $button-click-background-color;
-  transform: scale(1.1);
-  border-left: 1px solid $pagination-color;
-  border-right: 1px solid $pagination-color;
-  border-radius: 5px;
-  box-shadow: 0px 8px 5px -5px rgba(49, 34, 6, 0.6);
-}
-
-.general-input-registration {
+  &:hover,
+  &:focus {
+    padding-left: 10px;
+    font-weight: 500;
+    color: $main-text-color;
+    outline: none;
+    border-color: $button-click-background-color;
+    transform: scale(1.1);
+    border-left: 1px solid $pagination-color;
+    border-right: 1px solid $pagination-color;
+    border-radius: 5px;
+    box-shadow: $form-registration-input-box-shadow;
+  }
   &:not(:placeholder-shown) {
     color: $main-text-color;
   }
@@ -290,29 +300,8 @@
   }
 }
 
-.form-registration__item-label--name {
-  margin-bottom: 25px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
-  }
-}
-
-.form-registration__item-label--tel {
-  margin-bottom: 25px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
-  }
-}
-
-.form-registration__item-label--mail {
-  margin-bottom: 37px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-
 // ----------------Кнопка регистрации
-.form-registration_button {
+.form-registration__button {
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 110px;
