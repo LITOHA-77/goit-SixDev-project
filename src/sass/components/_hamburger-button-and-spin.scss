@@ -4,29 +4,33 @@
   right: 15px;
   top: 20px;
 
-  padding: 0;
-  display: inline-block;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: opacity 150ms linear;
+
+  background-color: rgba(254, 243, 228, 0.842);
+  border-radius: 50%;
 
   // Normalize (<button>)
   font: inherit;
   color: inherit;
   text-transform: none;
-  background-color: transparent;
-  border: 0;
   margin: 0;
   overflow: visible;
+  border: 0;
 
-  &:hover {
-    opacity: $hamburger-hover-opacity;
+  &:hover,
+  &:focus {
+    .hamburger-button__inner,
+    .hamburger-button__inner::before,
+    .hamburger-button__inner::after {
+      background-color: $button-hover-background-color;
+    }
   }
 
   &.is-active {
-    &:hover {
-      opacity: $hamburger-active-hover-opacity;
-    }
-
     .hamburger-button__inner,
     .hamburger-button__inner::before,
     .hamburger-button__inner::after {
